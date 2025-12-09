@@ -1,7 +1,6 @@
 base_url = "https://cv.tduyng.com"
 title = "Duy NG - CV"
 description = "Senior Backend Engineer - Node.js, TypeScript, AWS"
-language = "en"
 output_dir = "public"
 
 #=========================================================================================
@@ -10,7 +9,6 @@ output_dir = "public"
 [extra]
 # Multi-language support
 default_language = "fr"
-languages = ["en", "fr"]
 base_path = ""
 footer_copyright = "©2025 Duy NG"
 
@@ -23,7 +21,6 @@ avatar = "profile.png"
 linkedin = "tienduy-nguyen"
 github = "tduyng"
 twitter = "tduyng"
-codewars = "tduyng"
 
 # Nationality - IDs for translation
 nationalities = ["french", "vietnamese"]

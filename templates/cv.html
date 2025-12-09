@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ if .Page.Config.extra.lang }}{{ .Page.Config.extra.lang }}{{ else }}{{ .Page.Config.lang }}{{ end }}">
+<html lang="{{ .Page.Config.extra.lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
     <meta name="twitter:description" content="{{ .Site.Config.description }}">
     
     <!-- Language alternates -->
-    {{ if or (eq .Page.Config.lang "en") (eq .Page.Config.extra.lang "en") }}
+    {{ if eq .Page.Config.extra.lang "en" }}
     <link rel="alternate" hreflang="fr" href="{{ .Site.Config.base_url }}/fr/">
     {{ else }}
     <link rel="alternate" hreflang="en" href="{{ .Site.Config.base_url }}/en/">

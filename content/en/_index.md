@@ -1,7 +1,6 @@
 +++
 title = "Duy NG - CV"
 template = "cv.html"
-lang = "en"
 
 [extra]
 lang = "en"

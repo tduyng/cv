@@ -2,7 +2,7 @@
 <section class="content-section">
     <h2 class="content-section-title">
         <i class="fas fa-briefcase"></i>
-        {{ if eq .Page.Config.lang "fr" }}Expériences Professionnelles{{ else }}Experiences{{ end }}
+        {{ if eq .Page.Config.extra.lang "fr" }}Expériences Professionnelles{{ else }}Experiences{{ end }}
     </h2>
     
     {{ range .Site.Config.extra.experience }}
