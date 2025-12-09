@@ -667,11 +667,11 @@ li {
     transition: background-color 0.3s ease;
 }
 
-.content-section-title i,
-.content-section-title .fa-stack {
+.content-section-title i {
     color: var(--accent-color);
-    font-size: 24px;
+    font-size: 20px;
     transition: color 0.3s ease;
+    flex-shrink: 0;
 }
 
 /* Career Summary */
@@ -836,21 +836,28 @@ li {
     transition: color 0.3s ease;
 }
 
-/* Skills Section */
+/* Skills Section - 2 Column Grid */
 .skills-list {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
 }
 
 .skill-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: var(--spacing-sm);
+    padding: var(--spacing-md);
     background: rgba(137, 180, 250, 0.05);
-    border-radius: var(--border-radius);
+    border-radius: 10px;
     border-left: 3px solid var(--primary-color);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.skill-item:hover {
+    background: rgba(137, 180, 250, 0.08);
+    transform: translateX(2px);
 }
 
 .skill-name {
@@ -859,6 +866,9 @@ li {
     color: var(--text-bold);
     margin: 0;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .skill-details {
@@ -905,8 +915,9 @@ li {
         white-space: normal;
     }
     
-    /* Projects grid to single column on tablets */
-    .projects-grid {
+    /* Projects and skills grid to single column on tablets */
+    .projects-grid,
+    .skills-list {
         grid-template-columns: 1fr;
     }
 }
@@ -1140,6 +1151,19 @@ li {
     .item-title,
     .skill-name {
         color: #1e66f5 !important;
+    }
+    
+    /* Skills grid for print - keep 2 columns */
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: var(--spacing-sm) !important;
+    }
+    
+    .skill-item {
+        page-break-inside: avoid;
+        background: white !important;
+        border: 1px solid #ddd !important;
+        border-left: 3px solid #1e66f5 !important;
     }
     
     /* Projects grid for print - keep 2 columns */
