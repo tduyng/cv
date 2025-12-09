@@ -382,8 +382,13 @@ li {
     padding: var(--spacing-sm);
     background: rgba(137, 180, 250, 0.05);
     border-radius: 8px;
-    border-left: 3px solid var(--primary-color);
+    border: 1px solid rgba(137, 180, 250, 0.1);
     transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.education-item-sidebar:hover {
+    background: rgba(137, 180, 250, 0.08);
+    border-color: rgba(137, 180, 250, 0.2);
 }
 
 .education-item-sidebar:last-child {
@@ -851,13 +856,13 @@ li {
     padding: var(--spacing-md);
     background: rgba(137, 180, 250, 0.05);
     border-radius: 10px;
-    border-left: 3px solid var(--primary-color);
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid rgba(137, 180, 250, 0.12);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .skill-item:hover {
     background: rgba(137, 180, 250, 0.08);
-    transform: translateX(2px);
+    border-color: rgba(137, 180, 250, 0.25);
 }
 
 .skill-name {
@@ -1163,7 +1168,6 @@ li {
         page-break-inside: avoid;
         background: white !important;
         border: 1px solid #ddd !important;
-        border-left: 3px solid #1e66f5 !important;
     }
     
     /* Projects grid for print - keep 2 columns */
