@@ -1,5 +1,22 @@
+# Gozzi output
+public/
+
+# Old Jekyll/Ruby artifacts (archived)
+.archive-jekyll/
 _site/
 .sass-cache/
 .jekyll-cache/
-.jekyll-metadatapublic/
+.jekyll-metadata
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
 
