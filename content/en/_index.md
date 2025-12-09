@@ -168,10 +168,10 @@ details = "React, Next.js, HTML5/CSS3, TailwindCSS"
 
 [[extra.skills.items]]
 name = "Tools & Methodologies"
-details = "Agile, TDD, Jest, Neovim, VSCode, Clean Architecture, Design Patterns"
+details = "Agile, TDD, Nix, Neovim, Clean Architecture, Design Patterns, Terminal-centric"
 
 [[extra.skills.items]]
 name = "Automation & Scripting"
-details = "Bash, Makefiles, Justfiles, Python scripting, Node.js scripting, Go scripting"
+details = "Bash, Makefiles, Justfiles, Python/Node.js/Go scripting"
 
 +++
