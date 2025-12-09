@@ -144,15 +144,15 @@ title = "Compétences Techniques"
 
 [[extra.skills.items]]
 name = "Développement Backend"
-details = "Node.js, TypeScript, NestJS, Express, GraphQL, APIs REST"
+details = "Node.js, Deno, Bun, TypeScript, NestJS, Express, Fastify, Hono, GraphQL, gRPC, APIs REST"
 
 [[extra.skills.items]]
 name = "Langages de Programmation"
-details = "TypeScript/JavaScript, Go, Rust, C#, Python, Ruby, Lua, Zig"
+details = "TypeScript/JavaScript, Go, Rust, C#, Python, Lua, Zig"
 
 [[extra.skills.items]]
 name = "Bases de Données"
-details = "PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch"
+details = "PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch"
 
 [[extra.skills.items]]
 name = "Cloud & DevOps"
@@ -172,6 +172,6 @@ details = "Agile, TDD, Jest, Neovim, VSCode, Clean Architecture, Design Patterns
 
 [[extra.skills.items]]
 name = "Automatisation & Scripting"
-details = "Bash, Makefiles, Justfiles, Scripting Node.js, Scripting Go"
+details = "Bash, Makefiles, Justfiles, Scripting Python, Scripting Node.js, Scripting Go"
 
 +++
