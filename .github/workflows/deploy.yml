@@ -14,11 +14,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
+    name: "Deploy CV website from main:${{ github.event.head_commit.id || github.sha }}"
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      
+      - name: Set short SHA
+        id: sha
+        run: echo "short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
       - name: Setup Go
         uses: actions/setup-go@v6
@@ -28,21 +38,23 @@ jobs:
       - name: Install Gozzi
         run: go install github.com/tduyng/gozzi@latest
 
+      - name: Show Gozzi version
+        run: gozzi version
+
       - name: Build site
         run: gozzi build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: 'public'
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Deployment summary
+        run: |
+          echo "🚀 Deployment completed successfully!"
+          echo "📦 Deployed from: ${{ github.ref_name }}@${{ steps.sha.outputs.short }}"
+          echo "🔗 Site URL: ${{ steps.deployment.outputs.page_url }}"
