@@ -1,0 +1,50 @@
+name: CI validate
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: '1.25'
+
+      - name: Install Gozzi
+        run: go install github.com/tduyng/gozzi@latest
+
+      - name: Show Gozzi version
+        run: gozzi version
+
+      - name: Build site
+        run: gozzi build
+
+      - name: Validate build output
+        run: |
+          echo "Validating build output..."
+          if [ ! -d "public" ]; then
+            echo "❌ Error: public directory not found"
+            exit 1
+          fi
+          if [ ! -f "public/index.html" ]; then
+            echo "❌ Error: index.html not found"
+            exit 1
+          fi
+          echo "✅ Build validation passed"
+          echo "📊 Build size: $(du -sh public | cut -f1)"
+          echo "📁 Files generated: $(find public -type f | wc -l)"
