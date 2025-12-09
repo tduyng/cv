@@ -429,6 +429,26 @@ li {
     margin-bottom: 0;
 }
 
+/* Driving License */
+.driving-license-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--font-size-base);
+    padding: 10px;
+    background: rgba(137, 180, 250, 0.08);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.driving-license-info i {
+    font-size: 18px;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
 /* Languages List */
 .language-list {
     list-style: none;
@@ -1075,6 +1095,15 @@ li {
     }
     
     .contact-list i {
+        color: #179299 !important;
+    }
+    
+    .driving-license-info {
+        background: #f0f0f0 !important;
+        color: #4c4f69 !important;
+    }
+    
+    .driving-license-info i {
         color: #179299 !important;
     }
 

@@ -22,12 +22,14 @@ website = "tduyng.com"
 avatar = "profile.png"
 linkedin = "tienduy-nguyen"
 github = "tduyng"
-gitlab = "tduyng"
 twitter = "tduyng"
 codewars = "tduyng"
 
 # Nationality - IDs for translation
 nationalities = ["french", "vietnamese"]
+
+# Driving License - Fact only
+driving_license = "B"
 
 # Work Experience - Data only (translations in content files)
 [[extra.experience]]

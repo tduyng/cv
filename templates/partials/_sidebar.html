@@ -135,6 +135,19 @@
     </div>
     {{ end }}
     
+    <!-- Driving License Section -->
+    {{ if .Site.Config.extra.driving_license }}
+    <div class="sidebar-section">
+        <h2 class="section-title">
+            {{ .Page.Config.extra.trans.section.driving_license }}
+        </h2>
+        <div class="driving-license-info">
+            <i class="fas fa-car"></i>
+            <span>{{ .Site.Config.extra.driving_license }}</span>
+        </div>
+    </div>
+    {{ end }}
+    
     <!-- Languages Section -->
     {{ if .Site.Config.extra.language }}
     <div class="sidebar-section">

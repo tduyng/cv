@@ -153,6 +153,7 @@ details = "Bash, Makefiles, Justfiles, Python/Node.js/Go scripting"
 contact = "Contact"
 education = "Education"
 nationality = "Nationality"
+driving_license = "Driving License"
 languages = "Languages"
 interests = "Interests"
 
