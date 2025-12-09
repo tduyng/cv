@@ -5,26 +5,96 @@ language = "en"
 output_dir = "public"
 
 #=========================================================================================
+# IMMUTABLE DATA - Facts that never change regardless of language
+#=========================================================================================
 [extra]
+# Multi-language support
+default_language = "fr"
+languages = ["en", "fr"]
+base_path = ""
+footer_copyright = "©2025 Duy NG"
+
+# Profile Information - FACTS ONLY
 name = "Duy NG"
 email = "tduyng.dev@gmail.com"
 phone = "+33 7 58 04 38 28"
 website = "tduyng.com"
+avatar = "profile.png"
 linkedin = "tienduy-nguyen"
 github = "tduyng"
 gitlab = "tduyng"
 twitter = "tduyng"
 codewars = "tduyng"
-avatar = "/images/profile.png"
 
-# Theme colors (turquoise theme)
-theme_color = "#4CAC9D"
-theme_text_color = "#00bb9f"
+# Work Experience - Data only (translations in content files)
+[[extra.experience]]
+id = "ekino"
+company = "Ekino France - Paris"
+time = "2021 - Present"
 
-# Multi-language support
-default_language = "fr"
-languages = ["en", "fr"]
-base_path = ""
+[[extra.experience]]
+id = "vinci"
+company = "VINCI Construction France - Nanterre"
+time = "2018 - 2020"
 
-# Footer
-footer_copyright = "©2025 Duy NG"
+[[extra.experience]]
+id = "resirep"
+company = "RESIREP (EIFFAGE Group) - Monaco"
+time = "2016 - 2017"
+
+# Education - Data only
+[[extra.education]]
+id = "estp"
+university = "ESTP Paris"
+time = "2015 - 2018"
+
+[[extra.education]]
+id = "nuce"
+university = "National University of Civil Engineering - Vietnam"
+time = "2011 - 2015"
+
+# Languages Spoken - Data only
+[[extra.language]]
+id = "french"
+
+[[extra.language]]
+id = "english"
+level = "TOEIC 800"
+
+[[extra.language]]
+id = "vietnamese"
+
+# Interests - Just IDs for translation
+interests = ["rollerblade", "pingpong", "skiing", "reading", "film"]
+
+# Projects - URLs and IDs only
+[[extra.project]]
+id = "gozzi"
+url = "https://github.com/tduyng/gozzi"
+
+[[extra.project]]
+id = "veggies"
+url = "https://github.com/tduyng/veggies"
+
+[[extra.project]]
+id = "node_config"
+url = "https://github.com/tduyng/node-config"
+
+[[extra.project]]
+id = "node_logger"
+url = "https://github.com/tduyng/node-logger"
+
+[[extra.project]]
+id = "imgc_rs"
+url = "https://github.com/tduyng/imgc-rs"
+
+[[extra.project]]
+id = "prettyoutput"
+url = "https://github.com/tduyng/prettyoutput"
+
+[[extra.project]]
+id = "personal_website"
+url = "https://tduyng.com"
+
+# Skills Categories - Just IDs
+skills = ["backend", "languages", "databases", "cloud_devops", "version_control", "frontend", "tools", "automation"]

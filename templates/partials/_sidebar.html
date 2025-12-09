@@ -1,116 +1,117 @@
 <aside class="sidebar">
     <!-- Profile Section -->
     <div class="profile-section">
-        <img src="{{ .Site.Config.extra.base_path }}/images/{{ .Page.Config.extra.profile.avatar }}" 
-             alt="{{ .Page.Config.extra.profile.name }}" 
+        <img src="{{ .Site.Config.extra.base_path }}/images/{{ .Site.Config.extra.avatar }}" 
+             alt="{{ .Site.Config.extra.name }}" 
              class="avatar">
-        <h1 class="name">{{ .Page.Config.extra.profile.name }}</h1>
+        <h1 class="name">{{ .Site.Config.extra.name }}</h1>
         <p class="tagline">{{ .Page.Config.extra.tagline }}</p>
     </div>
     
     <!-- Contact Section -->
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ if eq .Page.Config.lang "fr" }}Contact{{ else }}Contact{{ end }}
+            {{ .Page.Config.extra.trans.section.contact }}
         </h2>
         <ul class="contact-list">
-            {{ if .Page.Config.extra.profile.email }}
+            {{ if .Site.Config.extra.email }}
             <li>
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:{{ .Page.Config.extra.profile.email }}">
-                    {{ .Page.Config.extra.profile.email }}
+                <a href="mailto:{{ .Site.Config.extra.email }}">
+                    {{ .Site.Config.extra.email }}
                 </a>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.phone }}
+            {{ if .Site.Config.extra.phone }}
             <li>
                 <i class="fas fa-phone"></i>
-                <span>{{ .Page.Config.extra.profile.phone }}</span>
+                <span>{{ .Site.Config.extra.phone }}</span>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.website }}
+            {{ if .Site.Config.extra.website }}
             <li>
                 <i class="fas fa-globe"></i>
-                <a href="https://{{ .Page.Config.extra.profile.website }}" target="_blank" rel="noopener noreferrer">
-                    {{ .Page.Config.extra.profile.website }}
+                <a href="https://{{ .Site.Config.extra.website }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Site.Config.extra.website }}
                 </a>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.linkedin }}
+            {{ if .Site.Config.extra.linkedin }}
             <li>
                 <i class="fab fa-linkedin"></i>
-                <a href="https://linkedin.com/in/{{ .Page.Config.extra.profile.linkedin }}" target="_blank" rel="noopener noreferrer">
-                    {{ .Page.Config.extra.profile.linkedin }}
+                <a href="https://linkedin.com/in/{{ .Site.Config.extra.linkedin }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Site.Config.extra.linkedin }}
                 </a>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.github }}
+            {{ if .Site.Config.extra.github }}
             <li>
                 <i class="fab fa-github"></i>
-                <a href="https://github.com/{{ .Page.Config.extra.profile.github }}" target="_blank" rel="noopener noreferrer">
-                    {{ .Page.Config.extra.profile.github }}
+                <a href="https://github.com/{{ .Site.Config.extra.github }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Site.Config.extra.github }}
                 </a>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.gitlab }}
+            {{ if .Site.Config.extra.gitlab }}
             <li>
                 <i class="fab fa-gitlab"></i>
-                <a href="https://gitlab.com/{{ .Page.Config.extra.profile.gitlab }}" target="_blank" rel="noopener noreferrer">
-                    {{ .Page.Config.extra.profile.gitlab }}
+                <a href="https://gitlab.com/{{ .Site.Config.extra.gitlab }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Site.Config.extra.gitlab }}
                 </a>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.twitter }}
+            {{ if .Site.Config.extra.twitter }}
             <li>
                 <i class="fab fa-twitter"></i>
-                <a href="https://twitter.com/{{ .Page.Config.extra.profile.twitter }}" target="_blank" rel="noopener noreferrer">
-                    {{ .Page.Config.extra.profile.twitter }}
+                <a href="https://twitter.com/{{ .Site.Config.extra.twitter }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Site.Config.extra.twitter }}
                 </a>
             </li>
             {{ end }}
             
-            {{ if .Page.Config.extra.profile.codewars }}
+            {{ if .Site.Config.extra.codewars }}
             <li>
                 <i class="fas fa-code"></i>
-                <a href="https://www.codewars.com/users/{{ .Page.Config.extra.profile.codewars }}" target="_blank" rel="noopener noreferrer">
-                    {{ .Page.Config.extra.profile.codewars }}
+                <a href="https://www.codewars.com/users/{{ .Site.Config.extra.codewars }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Site.Config.extra.codewars }}
                 </a>
             </li>
             {{ end }}
         </ul>
         
         <!-- GitHub Stats -->
-        {{ if .Page.Config.extra.profile.github }}
+        {{ if .Site.Config.extra.github }}
         <div class="github-stats">
-            <a href="https://github.com/{{ .Page.Config.extra.profile.github }}?tab=followers" target="_blank" rel="noopener noreferrer">
-                <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/{{ .Page.Config.extra.profile.github }}?logo=person-add&label=Follow&style=for-the-badge&color=C9CBFF&labelColor=302D41&logoColor=D9E0EE"/>
+            <a href="https://github.com/{{ .Site.Config.extra.github }}?tab=followers" target="_blank" rel="noopener noreferrer">
+                <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/{{ .Site.Config.extra.github }}?logo=person-add&label=Follow&style=for-the-badge&color=C9CBFF&labelColor=302D41&logoColor=D9E0EE"/>
             </a>
-            <a href="https://github.com/{{ .Page.Config.extra.profile.github }}?tab=repositories&sort=stargazers" target="_blank" rel="noopener noreferrer">
-                <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.demolab.com/github/stars/{{ .Page.Config.extra.profile.github }}?style=for-the-badge&logo=star&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41"/>
+            <a href="https://github.com/{{ .Site.Config.extra.github }}?tab=repositories&sort=stargazers" target="_blank" rel="noopener noreferrer">
+                <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.demolab.com/github/stars/{{ .Site.Config.extra.github }}?style=for-the-badge&logo=star&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41"/>
             </a>
-            <a href="https://github-view-counter.tienduy-nguyen-dev.workers.dev/?username={{ .Page.Config.extra.profile.github }}&style=for-the-badge&color=DDB6F2&labelColor=302D41&label=profile%20views" target="_blank" rel="noopener noreferrer">
-                <img alt="view counter" title="Github view counter" src="https://github-view-counter.tienduy-nguyen-dev.workers.dev/?username={{ .Page.Config.extra.profile.github }}&style=for-the-badge&color=DDB6F2&labelColor=302D41&label=profile%20views"/>
+            <a href="https://github-view-counter.tienduy-nguyen-dev.workers.dev/?username={{ .Site.Config.extra.github }}&style=for-the-badge&color=DDB6F2&labelColor=302D41&label=profile%20views" target="_blank" rel="noopener noreferrer">
+                <img alt="view counter" title="Github view counter" src="https://github-view-counter.tienduy-nguyen-dev.workers.dev/?username={{ .Site.Config.extra.github }}&style=for-the-badge&color=DDB6F2&labelColor=302D41&label=profile%20views"/>
             </a>
         </div>
         {{ end }}
     </div>
     
     <!-- Education Section -->
-    {{ if .Page.Config.extra.education }}
+    {{ if .Site.Config.extra.education }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ if eq .Page.Config.lang "fr" }}Formation{{ else }}Education{{ end }}
+            {{ .Page.Config.extra.trans.section.education }}
         </h2>
         <div class="education-list">
-            {{ range .Page.Config.extra.education }}
+            {{ range .Site.Config.extra.education }}
+                {{ $trans := index $.Page.Config.extra.trans.education .id }}
             <div class="education-item-sidebar">
-                <div class="degree">{{ .degree }}</div>
+                <div class="degree">{{ $trans.degree }}</div>
                 <div class="university">{{ .university }}</div>
                 <div class="time">{{ .time }}</div>
             </div>
@@ -120,15 +121,16 @@
     {{ end }}
     
     <!-- Languages Section -->
-    {{ if .Page.Config.extra.languages }}
+    {{ if .Site.Config.extra.language }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ if eq .Page.Config.lang "fr" }}Langues{{ else }}Languages{{ end }}
+            {{ .Page.Config.extra.trans.section.languages }}
         </h2>
         <ul class="language-list">
-            {{ range .Page.Config.extra.languages }}
+            {{ range .Site.Config.extra.language }}
+                {{ $trans := index $.Page.Config.extra.trans.language .id }}
             <li>
-                <strong>{{ .name }}:</strong> {{ .level }}
+                <strong>{{ $trans.name }}:</strong> {{ if .level }}{{ .level }}{{ else }}{{ $trans.level }}{{ end }}
             </li>
             {{ end }}
         </ul>
@@ -136,14 +138,15 @@
     {{ end }}
     
     <!-- Interests Section -->
-    {{ if .Page.Config.extra.interests }}
+    {{ if .Site.Config.extra.interests }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ if eq .Page.Config.lang "fr" }}Centres d'intérêt{{ else }}Interests{{ end }}
+            {{ .Page.Config.extra.trans.section.interests }}
         </h2>
         <ul class="interest-list">
-            {{ range .Page.Config.extra.interests }}
-            <li>{{ .name }}</li>
+            {{ range .Site.Config.extra.interests }}
+                {{ $trans := index $.Page.Config.extra.trans.interest . }}
+            <li>{{ $trans }}</li>
             {{ end }}
         </ul>
     </div>

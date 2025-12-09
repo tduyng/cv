@@ -1,4 +1,4 @@
 +++
-title = "Tien Duy NGUYEN - CV"
+title = "Duy NG - CV"
 template = "index.html"
 +++

@@ -1,4 +1,4 @@
-{{ if .Page.Config.extra.experiences }}
+{{ if .Site.Config.extra.experience }}
 <section class="content-section">
     <h2 class="content-section-title">
         <span class="fa-stack fa-xs">
@@ -8,15 +8,16 @@
         {{ if eq .Page.Config.lang "fr" }}Expériences Professionnelles{{ else }}Experiences{{ end }}
     </h2>
     
-    {{ range .Page.Config.extra.experiences }}
+    {{ range .Site.Config.extra.experience }}
+        {{ $trans := index $.Page.Config.extra.trans.experience .id }}
     <div class="experience-item">
         <div class="item-header">
-            <h3 class="item-title">{{ .role }}</h3>
+            <h3 class="item-title">{{ $trans.role }}</h3>
             <span class="item-time">{{ .time }}</span>
         </div>
         <div class="item-company">{{ .company }}</div>
-        {{ if .details }}
-        <div class="item-details">{{ .details }}</div>
+        {{ if $trans.details }}
+        <div class="item-details">{{ $trans.details }}</div>
         {{ end }}
     </div>
     {{ end }}
