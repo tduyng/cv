@@ -53,6 +53,13 @@ details = "Spécialité: Travaux Publics & BIM (Building Information Modeling), 
 degree = "Diplôme d'Ingénieur en Génie Civil"
 details = "Spécialité: Infrastructures de transports"
 
+# Nationality Translations
+[extra.trans.nationality.french]
+name = "Français"
+
+[extra.trans.nationality.vietnamese]
+name = "Vietnamien"
+
 # Languages Translations
 [extra.trans.language.french]
 name = "Français"
@@ -145,6 +152,7 @@ details = "Bash, Makefiles, Justfiles, Scripting Python/Node.js/Go"
 [extra.trans.section]
 contact = "Contact"
 education = "Formation"
+nationality = "Nationalité"
 languages = "Langues"
 interests = "Centres d'intérêt"
 

@@ -1,4 +1,4 @@
-{{ if .Site.Config.extra.skills }}
+{{ if .Site.Config.extra.skill }}
 <section class="content-section">
     <h2 class="content-section-title">
         <span class="fa-stack fa-xs">
@@ -9,8 +9,8 @@
     </h2>
     
     <div class="skills-list">
-        {{ range .Site.Config.extra.skills }}
-            {{ $trans := index $.Page.Config.extra.trans.skill . }}
+        {{ range .Site.Config.extra.skill }}
+            {{ $trans := index $.Page.Config.extra.trans.skill .id }}
         <div class="skill-item">
             <h3 class="skill-name">{{ $trans.name }}</h3>
             <div class="skill-details">{{ $trans.details }}</div>

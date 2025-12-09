@@ -53,6 +53,13 @@ details = "Specialization in Public Works & BIM, C# Programming, Dynamo for Revi
 degree = "Civil Engineer Degree"
 details = "Specialization in Transport Infrastructure"
 
+# Nationality Translations
+[extra.trans.nationality.french]
+name = "French"
+
+[extra.trans.nationality.vietnamese]
+name = "Vietnamese"
+
 # Languages Translations
 [extra.trans.language.french]
 name = "French"
@@ -145,6 +152,7 @@ details = "Bash, Makefiles, Justfiles, Python/Node.js/Go scripting"
 [extra.trans.section]
 contact = "Contact"
 education = "Education"
+nationality = "Nationality"
 languages = "Languages"
 interests = "Interests"
 

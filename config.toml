@@ -26,6 +26,9 @@ gitlab = "tduyng"
 twitter = "tduyng"
 codewars = "tduyng"
 
+# Nationality - IDs for translation
+nationalities = ["french", "vietnamese"]
+
 # Work Experience - Data only (translations in content files)
 [[extra.experience]]
 id = "ekino"
@@ -97,4 +100,26 @@ id = "personal_website"
 url = "https://tduyng.com"
 
 # Skills Categories - Just IDs
-skills = ["backend", "languages", "databases", "cloud_devops", "version_control", "frontend", "tools", "automation"]
+[[extra.skill]]
+id = "backend"
+
+[[extra.skill]]
+id = "languages"
+
+[[extra.skill]]
+id = "databases"
+
+[[extra.skill]]
+id = "cloud_devops"
+
+[[extra.skill]]
+id = "version_control"
+
+[[extra.skill]]
+id = "frontend"
+
+[[extra.skill]]
+id = "tools"
+
+[[extra.skill]]
+id = "automation"

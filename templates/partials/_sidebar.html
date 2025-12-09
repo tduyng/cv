@@ -120,6 +120,21 @@
     </div>
     {{ end }}
     
+    <!-- Nationality Section -->
+    {{ if .Site.Config.extra.nationalities }}
+    <div class="sidebar-section">
+        <h2 class="section-title">
+            {{ .Page.Config.extra.trans.section.nationality }}
+        </h2>
+        <ul class="nationality-list">
+            {{ range .Site.Config.extra.nationalities }}
+                {{ $trans := index $.Page.Config.extra.trans.nationality . }}
+            <li>{{ $trans.name }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+    
     <!-- Languages Section -->
     {{ if .Site.Config.extra.language }}
     <div class="sidebar-section">
@@ -152,8 +167,21 @@
     </div>
     {{ end }}
     
-    <!-- Language Switcher -->
+    <!-- Theme Toggle & Language Switcher -->
     <div class="sidebar-section">
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <span class="theme-icon light-icon">
+                    <i class="fas fa-sun"></i>
+                </span>
+                <span class="theme-icon dark-icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+        </div>
+        
+        <!-- Language Switcher -->
         <div class="language-switcher">
             <a href="{{ .Site.Config.extra.base_path }}/en/" {{ if eq .Page.Config.extra.lang "en" }}class="active"{{ end }}>EN</a>
             <span>|</span>
