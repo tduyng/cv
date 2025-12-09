@@ -22,6 +22,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{ .Site.Config.extra.base_path }}/css/cv.css">
     
+    <!-- Theme Script (load early to prevent flash) -->
+    <script src="{{ .Site.Config.extra.base_path }}/js/theme.js"></script>
+    
     <!-- SEO & Social -->
     <meta property="og:title" content="{{ .Page.Config.title }}">
     <meta property="og:description" content="{{ .Site.Config.description }}">
