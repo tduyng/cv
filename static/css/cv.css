@@ -772,51 +772,67 @@ li {
     margin-bottom: 4px;
 }
 
-/* Projects Section */
+/* Projects Section - 2 Column Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
 .project-item {
-    margin-bottom: var(--spacing-md);
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
     background: rgba(137, 180, 250, 0.05);
-    border-radius: var(--border-radius);
+    border-radius: 8px;
     border: 1px solid rgba(137, 180, 250, 0.15);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .project-item:hover {
     background: rgba(137, 180, 250, 0.1);
     border-color: rgba(137, 180, 250, 0.3);
-}
-
-.project-item:last-child {
-    margin-bottom: 0;
+    transform: translateY(-2px);
 }
 
 .project-title {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: var(--secondary-color);
-    margin: 0 0 8px 0;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    margin: 0;
     transition: color 0.3s ease;
 }
 
-.project-title::before {
+.project-title a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-title a::before {
     content: '→';
     font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 14px;
+    transition: transform 0.2s ease;
 }
 
-.project-title:hover {
+.project-title a:hover {
     color: var(--primary-color);
 }
 
+.project-title a:hover::before {
+    transform: translateX(3px);
+}
+
 .project-tagline {
-    color: var(--text-secondary);
-    font-size: var(--font-size-base);
+    color: var(--text-muted);
+    font-size: var(--font-size-small);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
     transition: color 0.3s ease;
 }
 
@@ -887,6 +903,11 @@ li {
 
     .item-time {
         white-space: normal;
+    }
+    
+    /* Projects grid to single column on tablets */
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1121,8 +1142,24 @@ li {
         color: #1e66f5 !important;
     }
     
+    /* Projects grid for print - keep 2 columns */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: var(--spacing-sm) !important;
+    }
+    
+    .project-item {
+        page-break-inside: avoid;
+        background: white !important;
+        border: 1px solid #ddd !important;
+    }
+    
     .project-title {
         color: #209fb5 !important;
+    }
+    
+    .project-title a {
+        color: inherit !important;
     }
 
     .item-time {

@@ -8,16 +8,18 @@
         {{ .Page.Config.extra.trans.project.title }}
     </h2>
     
-    {{ range .Site.Config.extra.project }}
-        {{ $trans := index $.Page.Config.extra.trans.project .id }}
-    <div class="project-item">
-        <h3 class="project-title">
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ $trans.title }}</a>
-        </h3>
-        {{ if $trans.tagline }}
-        <p class="project-tagline">{{ $trans.tagline }}</p>
+    <div class="projects-grid">
+        {{ range .Site.Config.extra.project }}
+            {{ $trans := index $.Page.Config.extra.trans.project .id }}
+        <div class="project-item">
+            <h3 class="project-title">
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ $trans.title }}</a>
+            </h3>
+            {{ if $trans.tagline }}
+            <p class="project-tagline">{{ $trans.tagline }}</p>
+            {{ end }}
+        </div>
         {{ end }}
     </div>
-    {{ end }}
 </section>
 {{ end }}

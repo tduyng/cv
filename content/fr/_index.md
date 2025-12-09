@@ -85,32 +85,32 @@ film = "Film"
 title = "Projets Open Source & Personnels"
 
 [extra.trans.project.gozzi]
-title = "Gozzi - Générateur de Site Statique"
-tagline = "Un générateur de site statique rapide et simple écrit en Go. Propulse tduyng.com avec des builds ultra-rapides."
+title = "Gozzi"
+tagline = "SSG rapide en Go • Builds en <100ms"
 
 [extra.trans.project.veggies]
-title = "Veggies - Framework de Tests BDD"
-tagline = "Contributeur principal du framework de tests BDD d'Ekino pour Node.js avec syntaxe Cucumber et Gherkin."
+title = "Veggies"
+tagline = "Framework BDD Node.js • Cucumber/Gherkin"
 
 [extra.trans.project.node_config]
-title = "node-config - Gestion de Configuration"
-tagline = "Contributeur à la bibliothèque de configuration Node.js d'Ekino pour applications multi-environnements."
+title = "node-config"
+tagline = "Lib configuration Node.js multi-env"
 
 [extra.trans.project.node_logger]
-title = "node-logger - Bibliothèque de Logging"
-tagline = "Contributeur à la solution de logging structuré d'Ekino pour applications Node.js."
+title = "node-logger"
+tagline = "Logging structuré pour Node.js"
 
 [extra.trans.project.imgc_rs]
-title = "imgc-rs - Convertisseur d'Images CLI"
-tagline = "Outil rapide de conversion d'images écrit en Rust supportant plusieurs formats (PNG, JPG, WebP, AVIF)."
+title = "imgc-rs"
+tagline = "Convertisseur d'images CLI en Rust • PNG/JPG/WebP/AVIF"
 
 [extra.trans.project.prettyoutput]
-title = "prettyoutput - Embellisseur de Terminal"
-tagline = "Bibliothèque Node.js pour une sortie console belle et colorée sans dépendances."
+title = "prettyoutput"
+tagline = "Console colorée Node.js • Zero dépendances"
 
 [extra.trans.project.personal_website]
-title = "Site Web & Blog Personnel"
-tagline = "Blog technique partageant des insights sur le développement backend, DevOps et l'ingénierie logicielle."
+title = "tduyng.com"
+tagline = "Blog technique • Backend, DevOps, Software Engineering"
 
 # Skills Translations
 [extra.trans.skill]
