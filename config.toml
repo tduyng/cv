@@ -1,20 +1,20 @@
-base_url = "https://cv.adev42.com"
-title = "Tien Duy NGUYEN - CV"
-description = "Full-stack Developer - JavaScript/TypeScript - NodeJS/ReactJS"
+base_url = "https://cv.tduyng.com"
+title = "Duy NG - CV"
+description = "Senior Backend Engineer - Node.js, TypeScript, AWS"
 language = "en"
 output_dir = "public"
 
 #=========================================================================================
 [extra]
-name = "Tien Duy NGUYEN"
-email = "tienduy.nguyen.dev@gmail.com"
+name = "Duy NG"
+email = "tduyng.dev@gmail.com"
 phone = "+33 7 58 04 38 28"
-website = "adev42.com"
+website = "tduyng.com"
 linkedin = "tienduy-nguyen"
-github = "tienduy-nguyen"
-gitlab = "tienduy-nguyen"
-twitter = "tienduy_nguyen"
-codewars = "tienduy-nguyen"
+github = "tduyng"
+gitlab = "tduyng"
+twitter = "tduyng"
+codewars = "tduyng"
 avatar = "/images/profile.png"
 
 # Theme colors (turquoise theme)
@@ -26,4 +26,4 @@ default_language = "en"
 languages = ["en", "fr"]
 
 # Footer
-footer_copyright = "©2025 Tien Duy NGUYEN"
+footer_copyright = "©2025 Duy NG"

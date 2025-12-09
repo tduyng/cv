@@ -1,32 +1,27 @@
 +++
-title = "Tien Duy NGUYEN - CV"
+title = "Duy NG - CV"
 template = "cv.html"
 lang = "fr"
 
 [extra]
-tagline = "Développeur Full-stack    JavaScript/TypeScript    NodeJS/ReactJS"
+tagline = "Ingénieur Backend Senior | Node.js, TypeScript, AWS"
 
 # Profile Information
 [extra.profile]
-name = "Tien Duy NGUYEN"
+name = "Duy NG"
 avatar = "profile.png"
-email = "tienduy.nguyen.dev@gmail.com"
+email = "tduyng.dev@gmail.com"
 phone = "+33 7 58 04 38 28"
-website = "adev42.com"
+website = "tduyng.com"
 linkedin = "tienduy-nguyen"
-github = "tienduy-nguyen"
-gitlab = "tienduy-nguyen"
-twitter = "tienduy_nguyen"
-codewars = "tienduy-nguyen"
+github = "tduyng"
+twitter = "tduyng"
+codewars = "tduyng"
 
 # Career Profile
 [extra.career]
-title = "A Propos"
-summary = """Avec le background Ingénieur BIM (Building Information Modeling) chez VINCI Construction France, j'ai travaillé avec plusieurs mordernes logiciels de construction. Cela me permet de trouver l'importance du développement numérique. Je suis devenu de plus en plus intéressé par la programmation. A partir du fin de 2019 j'ai commencé à s'y consacrer totalement.
-J'ai toujours adoré de découvrir et apprendre de nouvelles technologies. 
-J'ai déjà travaillé avec C#/.Net core, Python/Django, Ruby/Rails et maintenant je m'arrête à mon stack préféré: 
-
-TypeScript- NodeJS/NestJS - ReactJS - PostgreSQL (REST & GraphQL)"""
+title = "Profil Professionnel"
+summary = """Ingénieur Backend Senior chez Ekino France, spécialisé en Node.js, TypeScript et AWS pour des applications scalables et performantes. Avec une solide expertise en architecture logicielle et infrastructure cloud, je conçois des systèmes backend robustes capables de gérer des charges importantes de manière fiable. Avant de me spécialiser dans le développement backend, j'ai travaillé comme Ingénieur BIM chez VINCI Construction France, où j'ai développé des outils d'automatisation et des plugins en C#, démontrant ma polyvalence sur différentes stacks technologiques."""
 
 # Languages
 [[extra.languages]]
@@ -59,102 +54,99 @@ name = "Film"
 
 # Education
 [[extra.education]]
-degree = "Bootcamp intensive 3 mois - Full-stack Web Développement"
-university = "The Hacking Project - Paris"
-time = "07/2020 - 09/2020"
-details = "Ruby/Rails, JavaScript, TDD, Méthode Agile, Conception BDD, Pair/Peer Programming ..."
-
-[[extra.education]]
-degree = "Diplôme d'Ingénieur – Grade de Master"
-university = "ESTP PARIS"
+degree = "Diplôme d'Ingénieur – Grade de Master en BIM"
+university = "ESTP Paris"
 time = "2015 - 2018"
-details = "Spécialité: Travaux Publics & BIM (Building Information Modeling), Cours: C#, Dynamo (Python) pour Revit (3D)"
+details = "Spécialité: Travaux Publics & BIM (Building Information Modeling), Programmation C#, Dynamo pour Revit"
 
 [[extra.education]]
-degree = "Diplôme d'Ingénieur"
-university = "Ecole Supérieure de Génie Civil - Vietnam"
+degree = "Diplôme d'Ingénieur en Génie Civil"
+university = "École Supérieure de Génie Civil - Vietnam"
 time = "2011 - 2015"
 details = "Spécialité: Infrastructures de transports"
 
 # Work Experience
 [[extra.experiences]]
-role = "Développeur Full-stack/Open-sourcer"
-time = "10/2019 - Aujourd'hui"
-company = "Open-source/GitHub"
-details = """- Participer à développer des projects open-source sur GitHub: tutoriels, démo
-  technologies, boilerplates websites: entreprise app, ecommerce, blog/social ...
-- Travailer pricipalement avec JavaScript et TypeScript via NodeJS etReactJS, et des fois avec Ruby/Rails, Python/Django et C#
-- Consulter mes projets personels sur mon website: https://adev42.com et aussi sur mon GitHub: tienduy-nguyen"""
+role = "Ingénieur Backend Senior"
+time = "2021 - Présent"
+company = "Ekino France - Paris"
+details = """• Conception et développement de systèmes backend haute performance avec Node.js, TypeScript et NestJS
+• Conception et implémentation d'APIs RESTful et GraphQL gérant des millions de requêtes quotidiennes
+• Gestion d'infrastructure cloud sur AWS (EC2, Lambda, S3, RDS, ElastiCache)
+• Mise en place de pipelines CI/CD avec GitLab et GitHub Actions pour les déploiements automatisés
+• Orchestration d'applications conteneurisées avec Docker et Kubernetes
+• Optimisation des performances des bases de données (PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch)
+• Animation de revues techniques et mentorat des développeurs juniors
+• Technologies: Node.js, TypeScript, NestJS, AWS, Docker, Kubernetes, PostgreSQL, MongoDB, Redis"""
 
 [[extra.experiences]]
-role = "Ingénieur/Développeur BIM"
-time = "03/2018 - 06/2020"
-company = "VCF Habitat IDF (VINCI CONSTRUCTION FRANCE) à Nanterre (92000), France"
-details = """- Développer des plugins Revit avec C#, WPF et Dynamo aux besoins de l'entreprise
-- Développer une application sur VBA pour GTM Bâtiment:  Planning connecté entre Excel et le plateforme WizzCAD pour gérer des RDV des travaux du logement.
-- Gérer le flux de travail sur la maquette Revit entre le service ARC, STR, MTH
-- BIM Ingénieur/Coordinateur (principal): Gérer le flux de travail sur la maquette BIM entre différence service dans l'entreprise (STR, MTH, ARC, EDP). Collaborer avec des ingénieurs, des projeteurs pour modéliser, intégrer des informations (BIM) dans la maquette numérique et sortir des  maquettes  Revit, IFC dédiés pour chaque service."""
+role = "Ingénieur BIM & Développeur"
+time = "2018 - 2020"
+company = "VINCI Construction France - Nanterre"
+details = """• Développement de plugins Revit personnalisés en C#, WPF et Dynamo pour automatiser les workflows BIM
+• Création d'applications VBA Excel pour la planification et la gestion de chantier
+• Développement d'outils d'automatisation réduisant le temps de modélisation manuelle de 40%
+• Coordination des workflows BIM entre les départements Architecture, Structure et Méthodes
+• Gestion des modèles BIM structurels pour l'estimation des coûts et le suivi de projet
+• Établissement des standards et bonnes pratiques BIM internes
+• Technologies: C#, .NET, WPF, Dynamo, VBA, API Revit"""
 
 [[extra.experiences]]
-role = "Stage assistant conducteur de travaux"
-time = "06/2016 - 08/2017"
-company = "RESIREP (EIFFAGE DE CONSTRUCTION) à Monaco"
-details = "- Chantier fondations spéciaux : Chantier Darse Nord et chantier Tour Giroflées à Monaco"
+role = "Stagiaire Ingénieur Travaux"
+time = "2016 - 2017"
+company = "RESIREP (Groupe EIFFAGE) - Monaco"
+details = """• Assistance à la supervision de projets de fondations spéciales
+• Participation aux projets majeurs: Darse Nord et Tour Giroflées à Monaco
+• Coordination avec les équipes d'ingénierie sur les spécifications techniques"""
+
+# Projects
+[extra.projects]
+title = "Projets Open Source & Personnels"
+
+[[extra.projects.items]]
+title = "Gozzi - Générateur de Site Statique"
+link = "https://github.com/tduyng/gozzi"
+tagline = "Un générateur de site statique rapide et simple écrit en Go. Propulse tduyng.com avec des builds ultra-rapides."
+
+[[extra.projects.items]]
+title = "Site Web & Blog Personnel"
+link = "https://tduyng.com"
+tagline = "Blog technique partageant des insights sur le développement backend, DevOps et l'ingénierie logicielle."
 
 # Skills & Proficiency
 [extra.skills]
 title = "Compétences Techniques"
 
 [[extra.skills.items]]
-name = "Langages"
-details = "JavaScript/TypeScript,  Python, Ruby, C#, VBA"
+name = "Développement Backend"
+details = "Node.js, TypeScript, NestJS, Express, GraphQL, APIs REST"
 
 [[extra.skills.items]]
-name = "Back-End (REST/GraphQL)"
-details = "NodeJS/NestJS/Express, Ruby on Rails, Django/REST Framework, C# .Net-core > 3.0/Entity Framework"
+name = "Langages de Programmation"
+details = "TypeScript/JavaScript, Go, Rust, C#, Python, Ruby, Lua, Zig"
 
 [[extra.skills.items]]
-name = "Front-End Frameworks"
-details = "ReactJS, NextJS, ViteJS, HTML5/CSS"
+name = "Bases de Données"
+details = "PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch"
 
 [[extra.skills.items]]
-name = "Front-End UI/Tools"
-details = "Webpack, Babel, Bootstrap, Ant design, Chakra-UI, TailwindCSS"
+name = "Cloud & DevOps"
+details = "AWS (EC2, Lambda, S3, RDS), Docker, Kubernetes, ArgoCD, CI/CD"
 
 [[extra.skills.items]]
-name = "DBMS"
-details = "PostgreSQL, MySQL, MongoDB , SQLite, Redis, Elastic search"
+name = "Contrôle de Version"
+details = "Git, GitHub, GitLab, GitHub Actions"
 
 [[extra.skills.items]]
-name = "ORM Tools"
-details = "TypeORM, Prisma2, Mongoose, Sequelize"
+name = "Technologies Frontend"
+details = "React, Next.js, HTML5/CSS3, TailwindCSS"
 
 [[extra.skills.items]]
-name = "Contrôle de versions"
-details = "Git, GitHub, GitLab"
+name = "Outils & Méthodologies"
+details = "Agile, TDD, Jest, Neovim, VSCode, Clean Architecture, Design Patterns"
 
 [[extra.skills.items]]
-name = "Cloud Technologies"
-details = "Docker, AWS, Firebase, Heroku"
-
-[[extra.skills.items]]
-name = "CI-CD"
-details = "GitHub actions, Travis-Ci, Circle-Ci"
-
-[[extra.skills.items]]
-name = "Système"
-details = "Linux, Microsoft"
-
-[[extra.skills.items]]
-name = "IDE/Text-Editor"
-details = "VsCode, Vim/NeoVim, Tmux, Visual Studio"
-
-[[extra.skills.items]]
-name = "Autre"
-details = "TDD (Jest/Cypress), Méthode Agile, Clean Code, Clean Architecture, Design Pattern, Heroku, Générateur Site Static (Jekyll, Hugo), Trello, Cloudflare"
-
-[[extra.skills.items]]
-name = "Logiciels BIM"
-details = "Revit, Autocad, Naviswork, Tekla Structure, Robot(RSA), SketchUp, Civil 3D, Rhinoceros, MSProject"
+name = "Automatisation & Scripting"
+details = "Bash, Makefiles, Justfiles, Scripting Node.js, Scripting Go"
 
 +++
