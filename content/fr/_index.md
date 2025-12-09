@@ -109,6 +109,31 @@ link = "https://github.com/tduyng/gozzi"
 tagline = "Un générateur de site statique rapide et simple écrit en Go. Propulse tduyng.com avec des builds ultra-rapides."
 
 [[extra.projects.items]]
+title = "Veggies - Framework de Tests BDD"
+link = "https://github.com/tduyng/veggies"
+tagline = "Contributeur principal du framework de tests BDD d'Ekino pour Node.js avec syntaxe Cucumber et Gherkin."
+
+[[extra.projects.items]]
+title = "node-config - Gestion de Configuration"
+link = "https://github.com/tduyng/node-config"
+tagline = "Contributeur à la bibliothèque de configuration Node.js d'Ekino pour applications multi-environnements."
+
+[[extra.projects.items]]
+title = "node-logger - Bibliothèque de Logging"
+link = "https://github.com/tduyng/node-logger"
+tagline = "Contributeur à la solution de logging structuré d'Ekino pour applications Node.js."
+
+[[extra.projects.items]]
+title = "imgc-rs - Convertisseur d'Images CLI"
+link = "https://github.com/tduyng/imgc-rs"
+tagline = "Outil rapide de conversion d'images écrit en Rust supportant plusieurs formats (PNG, JPG, WebP, AVIF)."
+
+[[extra.projects.items]]
+title = "prettyoutput - Embellisseur de Terminal"
+link = "https://github.com/tduyng/prettyoutput"
+tagline = "Bibliothèque Node.js pour une sortie console belle et colorée sans dépendances."
+
+[[extra.projects.items]]
 title = "Site Web & Blog Personnel"
 link = "https://tduyng.com"
 tagline = "Blog technique partageant des insights sur le développement backend, DevOps et l'ingénierie logicielle."
