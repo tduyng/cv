@@ -4,6 +4,7 @@ template = "cv.html"
 lang = "en"
 
 [extra]
+lang = "en"
 tagline = "Senior Backend Engineer | Node.js, TypeScript, AWS"
 
 # Profile Information

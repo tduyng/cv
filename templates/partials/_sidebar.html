@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <!-- Profile Section -->
     <div class="profile-section">
-        <img src="/images/{{ .Page.Config.extra.profile.avatar }}" 
+        <img src="{{ .Site.Config.extra.base_path }}/images/{{ .Page.Config.extra.profile.avatar }}" 
              alt="{{ .Page.Config.extra.profile.name }}" 
              class="avatar">
         <h1 class="name">{{ .Page.Config.extra.profile.name }}</h1>
@@ -137,9 +137,9 @@
     <!-- Language Switcher -->
     <div class="sidebar-section">
         <div class="language-switcher">
-            <a href="/en/" {{ if eq .Page.Config.lang "en" }}class="active"{{ end }}>EN</a>
+            <a href="{{ .Site.Config.extra.base_path }}/en/" {{ if eq .Page.Config.extra.lang "en" }}class="active"{{ end }}>EN</a>
             <span>|</span>
-            <a href="/fr/" {{ if eq .Page.Config.lang "fr" }}class="active"{{ end }}>FR</a>
+            <a href="{{ .Site.Config.extra.base_path }}/fr/" {{ if eq .Page.Config.extra.lang "fr" }}class="active"{{ end }}>FR</a>
         </div>
     </div>
 </aside>

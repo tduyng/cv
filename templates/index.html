@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Page.Config.title }}</title>
-    <meta http-equiv="refresh" content="0; url=/en/">
+    <meta http-equiv="refresh" content="0; url={{ .Site.Config.extra.base_path }}/en/">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -51,8 +51,8 @@
     <div class="container">
         <h1>Select Your Language / Choisissez votre langue</h1>
         <div class="lang-links">
-            <a href="/en/">English</a>
-            <a href="/fr/">Français</a>
+            <a href="{{ .Site.Config.extra.base_path }}/en/">English</a>
+            <a href="{{ .Site.Config.extra.base_path }}/fr/">Français</a>
         </div>
         <p style="margin-top: 2rem; color: #97AAC3;">Redirecting to English version...</p>
     </div>
