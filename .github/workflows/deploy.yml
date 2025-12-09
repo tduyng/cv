@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   deploy:
-    name: "Deploy CV website from main:${{ github.event.head_commit.id || github.sha }}"
+    name: "Deploy CV website from main:${{ github.sha }}"
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -28,7 +28,7 @@ jobs:
       
       - name: Set short SHA
         id: sha
-        run: echo "short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        run: echo "short=$(git rev-parse --short=8 HEAD)" >> $GITHUB_OUTPUT
 
       - name: Setup Go
         uses: actions/setup-go@v6
