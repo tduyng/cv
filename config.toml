@@ -22,7 +22,7 @@ theme_color = "#4CAC9D"
 theme_text_color = "#00bb9f"
 
 # Multi-language support
-default_language = "en"
+default_language = "fr"
 languages = ["en", "fr"]
 base_path = ""
 
