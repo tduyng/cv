@@ -1027,7 +1027,7 @@ li {
     /* A4 page setup */
     @page {
         size: A4 portrait;
-        margin: 10mm 8mm;
+        margin: 12mm;
     }
     
     /* Force light mode for printing */
@@ -1059,16 +1059,16 @@ li {
         --accent-color: #179299;
         
         /* Compact print spacing */
-        --spacing-xs: 0.2rem;
-        --spacing-sm: 0.4rem;
-        --spacing-md: 0.6rem;
-        --spacing-lg: 0.8rem;
-        --spacing-xl: 1rem;
+        --spacing-xs: 0.3rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 0.8rem;
+        --spacing-lg: 1rem;
+        --spacing-xl: 1.2rem;
         
-        /* Smaller fonts for print */
-        --font-size-base: 9pt;
-        --font-size-small: 8pt;
-        --font-size-large: 10pt;
+        /* Readable fonts for print */
+        --font-size-base: 10pt;
+        --font-size-small: 9pt;
+        --font-size-large: 11pt;
     }
     
     html, body {
@@ -1078,8 +1078,8 @@ li {
         padding: 0;
         background: white !important;
         color: #4c4f69 !important;
-        font-size: 9pt !important;
-        line-height: 1.4 !important;
+        font-size: 10pt !important;
+        line-height: 1.5 !important;
     }
 
     .cv-wrapper {
@@ -1090,7 +1090,7 @@ li {
         border: none;
         background: white !important;
         display: grid;
-        grid-template-columns: 28% 72%;
+        grid-template-columns: 30% 70%;
         min-height: auto;
         margin: 0;
         page-break-after: auto;
@@ -1128,8 +1128,8 @@ li {
     }
     
     .tagline {
-        font-size: 7.5pt !important;
-        line-height: 1.2 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.3 !important;
         color: #5c5f77 !important;
         margin: 0 !important;
     }
@@ -1141,7 +1141,7 @@ li {
     }
     
     .section-title {
-        font-size: 7.5pt !important;
+        font-size: 8.5pt !important;
         margin: 0 0 5px 0 !important;
         color: #1e66f5 !important;
         letter-spacing: 0.03em;
@@ -1157,20 +1157,20 @@ li {
     .contact-list li {
         margin-bottom: 3px !important;
         padding: 2px !important;
-        font-size: 6.5pt !important;
-        line-height: 1.2 !important;
+        font-size: 7.5pt !important;
+        line-height: 1.3 !important;
         gap: 5px !important;
     }
     
     .contact-list i {
-        font-size: 9px !important;
-        width: 12px !important;
+        font-size: 10px !important;
+        width: 14px !important;
         color: #179299 !important;
     }
     
     .contact-list a {
         color: #4c4f69 !important;
-        font-size: 6.5pt !important;
+        font-size: 7.5pt !important;
     }
     
     /* Compact education in sidebar */
@@ -1182,30 +1182,30 @@ li {
     }
     
     .education-item-sidebar .degree {
-        font-size: 7pt !important;
+        font-size: 8pt !important;
         margin-bottom: 2px !important;
-        line-height: 1.1 !important;
+        line-height: 1.2 !important;
         color: #1e66f5 !important;
     }
     
     .education-item-sidebar .university,
     .education-item-sidebar .time {
-        font-size: 6.5pt !important;
+        font-size: 7.5pt !important;
         margin-bottom: 1px !important;
-        line-height: 1.1 !important;
+        line-height: 1.2 !important;
     }
     
     /* Compact nationality, driving license */
     .nationality-list li {
         margin-bottom: 3px !important;
         padding: 3px !important;
-        font-size: 7pt !important;
+        font-size: 8pt !important;
         background: rgba(137, 180, 250, 0.08) !important;
     }
     
     .driving-license-info {
         padding: 4px !important;
-        font-size: 7pt !important;
+        font-size: 8pt !important;
         gap: 5px !important;
         background: rgba(137, 180, 250, 0.08) !important;
         color: #4c4f69 !important;
@@ -1220,7 +1220,7 @@ li {
     .language-list li {
         margin-bottom: 4px !important;
         padding: 3px !important;
-        font-size: 7pt !important;
+        font-size: 8pt !important;
         background: rgba(148, 226, 213, 0.08) !important;
     }
     
@@ -1231,7 +1231,7 @@ li {
     
     .interest-list li {
         padding: 3px 6px !important;
-        font-size: 6.5pt !important;
+        font-size: 7.5pt !important;
         border: 1px solid rgba(137, 180, 250, 0.2) !important;
         background: rgba(137, 180, 250, 0.1) !important;
     }
@@ -1247,15 +1247,15 @@ li {
 
     /* Main content - better use of space */
     .main-content {
-        padding: 10px 14px !important;
+        padding: 12px 16px !important;
         background: white !important;
         color: #4c4f69 !important;
     }
 
-    /* Compact content sections */
+    /* Content sections */
     .content-section {
-        margin-bottom: 8px !important;
-        padding: 7px 9px !important;
+        margin-bottom: 10px !important;
+        padding: 9px 11px !important;
         background: white !important;
         border: 1px solid #ddd;
         page-break-inside: avoid;
@@ -1267,9 +1267,9 @@ li {
     }
 
     .content-section-title {
-        font-size: 10pt !important;
-        margin: 0 0 5px 0 !important;
-        padding-bottom: 3px !important;
+        font-size: 11pt !important;
+        margin: 0 0 6px 0 !important;
+        padding-bottom: 4px !important;
         color: #1e66f5 !important;
         border-bottom: 1px solid #ddd !important;
         letter-spacing: 0.02em;
@@ -1287,10 +1287,10 @@ li {
         font-size: 12px !important;
     }
 
-    /* Career summary - compact */
+    /* Career summary */
     .career-summary {
-        font-size: 8.5pt !important;
-        line-height: 1.35 !important;
+        font-size: 9.5pt !important;
+        line-height: 1.4 !important;
         color: #5c5f77 !important;
         text-align: justify;
     }
@@ -1327,14 +1327,14 @@ li {
     }
     
     .item-title {
-        font-size: 9pt !important;
+        font-size: 10pt !important;
         color: #1e66f5 !important;
         font-weight: 600 !important;
     }
     
     .item-time {
-        font-size: 6.5pt !important;
-        padding: 2px 5px !important;
+        font-size: 8pt !important;
+        padding: 2px 6px !important;
         background: #f0f0f0 !important;
         border: 1px solid #ddd !important;
         color: #179299 !important;
@@ -1342,32 +1342,27 @@ li {
     
     .item-company,
     .item-university {
-        font-size: 8pt !important;
+        font-size: 9pt !important;
         margin-bottom: 3px !important;
         color: #7c7f93 !important;
     }
     
     .item-details {
-        font-size: 7.5pt !important;
-        line-height: 1.35 !important;
+        font-size: 9pt !important;
+        line-height: 1.4 !important;
         color: #5c5f77 !important;
     }
     
     .item-details ul {
-        margin-top: 2px !important;
-        margin-bottom: 2px !important;
-        padding-left: 1.1em !important;
+        margin-top: 3px !important;
+        margin-bottom: 3px !important;
+        padding-left: 1.2em !important;
     }
     
     .item-details li {
-        margin-bottom: 1.5px !important;
+        margin-bottom: 2px !important;
     }
 
-    /* Force skills section to start on new page */
-    .skills-section {
-        page-break-before: always !important;
-    }
-    
     /* Skills grid - compact 2 columns */
     .skills-list {
         display: grid !important;
@@ -1385,15 +1380,15 @@ li {
     }
     
     .skill-name {
-        font-size: 9pt !important;
+        font-size: 9.5pt !important;
         margin-bottom: 3px !important;
         color: #1e66f5 !important;
         font-weight: 600 !important;
     }
     
     .skill-details {
-        font-size: 8pt !important;
-        line-height: 1.3 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.35 !important;
         color: #5c5f77 !important;
     }
 
@@ -1415,23 +1410,23 @@ li {
     }
     
     .project-title {
-        font-size: 9pt !important;
+        font-size: 9.5pt !important;
         color: #209fb5 !important;
         font-weight: 600 !important;
     }
     
     .project-title a {
         color: inherit !important;
-        font-size: 9pt !important;
+        font-size: 9.5pt !important;
     }
     
     .project-title a::before {
-        font-size: 9pt !important;
+        font-size: 9.5pt !important;
     }
     
     .project-tagline {
-        font-size: 7pt !important;
-        line-height: 1.3 !important;
+        font-size: 8pt !important;
+        line-height: 1.35 !important;
         color: #5c5f77 !important;
     }
 
