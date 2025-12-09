@@ -1,0 +1,24 @@
+{{ if .Page.Config.extra.experiences }}
+<section class="content-section">
+    <h2 class="content-section-title">
+        <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+        </span>
+        {{ if eq .Page.Config.lang "fr" }}Expériences Professionnelles{{ else }}Experiences{{ end }}
+    </h2>
+    
+    {{ range .Page.Config.extra.experiences }}
+    <div class="experience-item">
+        <div class="item-header">
+            <h3 class="item-title">{{ .role }}</h3>
+            <span class="item-time">{{ .time }}</span>
+        </div>
+        <div class="item-company">{{ .company }}</div>
+        {{ if .details }}
+        <div class="item-details">{{ .details }}</div>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ if .Page.Config.extra.career }}
+<section class="content-section">
+    <h2 class="content-section-title">
+        <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+        </span>
+        {{ .Page.Config.extra.career.title }}
+    </h2>
+    <div class="career-summary">
+        {{ .Page.Config.extra.career.summary }}
+    </div>
+</section>
+{{ end }}

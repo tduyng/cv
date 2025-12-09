@@ -1,0 +1,145 @@
+<aside class="sidebar">
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <img src="/images/{{ .Page.Config.extra.profile.avatar }}" 
+             alt="{{ .Page.Config.extra.profile.name }}" 
+             class="avatar">
+        <h1 class="name">{{ .Page.Config.extra.profile.name }}</h1>
+        <p class="tagline">{{ .Page.Config.extra.tagline }}</p>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="sidebar-section">
+        <h2 class="section-title">
+            {{ if eq .Page.Config.lang "fr" }}Contact{{ else }}Contact{{ end }}
+        </h2>
+        <ul class="contact-list">
+            {{ if .Page.Config.extra.profile.email }}
+            <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:{{ .Page.Config.extra.profile.email }}">
+                    {{ .Page.Config.extra.profile.email }}
+                </a>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.phone }}
+            <li>
+                <i class="fas fa-phone"></i>
+                <span>{{ .Page.Config.extra.profile.phone }}</span>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.website }}
+            <li>
+                <i class="fas fa-globe"></i>
+                <a href="https://{{ .Page.Config.extra.profile.website }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Page.Config.extra.profile.website }}
+                </a>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.linkedin }}
+            <li>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/{{ .Page.Config.extra.profile.linkedin }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Page.Config.extra.profile.linkedin }}
+                </a>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.github }}
+            <li>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/{{ .Page.Config.extra.profile.github }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Page.Config.extra.profile.github }}
+                </a>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.gitlab }}
+            <li>
+                <i class="fab fa-gitlab"></i>
+                <a href="https://gitlab.com/{{ .Page.Config.extra.profile.gitlab }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Page.Config.extra.profile.gitlab }}
+                </a>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.twitter }}
+            <li>
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/{{ .Page.Config.extra.profile.twitter }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Page.Config.extra.profile.twitter }}
+                </a>
+            </li>
+            {{ end }}
+            
+            {{ if .Page.Config.extra.profile.codewars }}
+            <li>
+                <i class="fas fa-code"></i>
+                <a href="https://www.codewars.com/users/{{ .Page.Config.extra.profile.codewars }}" target="_blank" rel="noopener noreferrer">
+                    {{ .Page.Config.extra.profile.codewars }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    
+    <!-- Education Section -->
+    {{ if .Page.Config.extra.education }}
+    <div class="sidebar-section">
+        <h2 class="section-title">
+            {{ if eq .Page.Config.lang "fr" }}Formation{{ else }}Education{{ end }}
+        </h2>
+        <div class="education-list">
+            {{ range .Page.Config.extra.education }}
+            <div class="education-item-sidebar">
+                <div class="degree">{{ .degree }}</div>
+                <div class="university">{{ .university }}</div>
+                <div class="time">{{ .time }}</div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+    
+    <!-- Languages Section -->
+    {{ if .Page.Config.extra.languages }}
+    <div class="sidebar-section">
+        <h2 class="section-title">
+            {{ if eq .Page.Config.lang "fr" }}Langues{{ else }}Languages{{ end }}
+        </h2>
+        <ul class="language-list">
+            {{ range .Page.Config.extra.languages }}
+            <li>
+                <strong>{{ .name }}:</strong> {{ .level }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+    
+    <!-- Interests Section -->
+    {{ if .Page.Config.extra.interests }}
+    <div class="sidebar-section">
+        <h2 class="section-title">
+            {{ if eq .Page.Config.lang "fr" }}Centres d'intérêt{{ else }}Interests{{ end }}
+        </h2>
+        <ul class="interest-list">
+            {{ range .Page.Config.extra.interests }}
+            <li>{{ .name }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+    
+    <!-- Language Switcher -->
+    <div class="sidebar-section">
+        <div class="language-switcher">
+            <a href="/en/" {{ if eq .Page.Config.lang "en" }}class="active"{{ end }}>EN</a>
+            <span>|</span>
+            <a href="/fr/" {{ if eq .Page.Config.lang "fr" }}class="active"{{ end }}>FR</a>
+        </div>
+    </div>
+</aside>

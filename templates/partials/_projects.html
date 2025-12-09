@@ -1,0 +1,26 @@
+{{ if .Page.Config.extra.projects }}
+<section class="content-section">
+    <h2 class="content-section-title">
+        <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+        </span>
+        {{ .Page.Config.extra.projects.title }}
+    </h2>
+    
+    {{ if .Page.Config.extra.projects.intro }}
+    <p class="mb-3">{{ .Page.Config.extra.projects.intro }}</p>
+    {{ end }}
+    
+    {{ range .Page.Config.extra.projects.items }}
+    <div class="project-item">
+        <h3 class="project-title">
+            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+        </h3>
+        {{ if .tagline }}
+        <p class="project-tagline">{{ .tagline }}</p>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+{{ end }}
