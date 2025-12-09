@@ -1236,13 +1236,12 @@ li {
         background: rgba(137, 180, 250, 0.1) !important;
     }
 
-    /* Hide theme toggle and language switcher */
+    /* Hide theme toggle, language switcher, and footer */
     .theme-toggle-container,
-    .language-switcher {
-        display: none !important;
-    }
-
-    .github-stats {
+    .language-switcher,
+    .github-stats,
+    .cv-footer,
+    footer.cv-footer {
         display: none !important;
     }
 
