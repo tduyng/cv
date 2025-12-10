@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Page.Config.title }}</title>
     <meta http-equiv="refresh" content="0; url={{ .Site.Config.extra.base_path }}/{{ .Site.Config.extra.default_language }}/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{{ .Site.Config.extra.base_path }}/favicon.ico">
+    
     <style>
         body {
             font-family: 'Roboto', sans-serif;
