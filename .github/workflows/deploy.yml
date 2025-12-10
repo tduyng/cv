@@ -1,6 +1,6 @@
 name: Deploy CV Site
 
-run-name: "Deploy CV from main:${{ github.ref_name }}@${{ github.sha }}"
+run-name: "Deploy CV from ${{ github.ref_name }}@${{ github.sha }}"
 
 on:
   # Manual deployment only - trigger from Actions tab
