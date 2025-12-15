@@ -18,8 +18,8 @@ summary = "Senior Backend Engineer at Ekino France, specializing in Node.js, Typ
 # Work Experience Translations
 [extra.trans.experience.ekino]
 role = "Senior Backend Engineer"
-details = """• Architected and developed high-performance backend systems using Node.js, TypeScript, and NestJS
-• Designed and implemented RESTful and GraphQL APIs handling millions of requests daily
+details = """• Working on CANAL+ projects, developing high-performance backend systems using Node.js, TypeScript, and NestJS
+• Architected and designed RESTful and GraphQL APIs handling millions of requests daily
 • Managed cloud infrastructure on AWS (EC2, Lambda, S3, RDS, ElastiCache)
 • Implemented CI/CD pipelines with GitLab and GitHub Actions for automated deployments
 • Orchestrated containerized applications with Docker and Kubernetes
@@ -117,7 +117,7 @@ title = "Technical Skills"
 
 [extra.trans.skill.backend]
 name = "Backend Development"
-details = "Node.js, Deno, Bun, TypeScript, NestJS, Express, Fastify, Hono, GraphQL, gRPC, REST APIs"
+details = "Node.js, Deno, Bun, TypeScript, NestJS, REST, GraphQL, gRPC"
 
 [extra.trans.skill.languages]
 name = "Programming Languages"
@@ -131,6 +131,18 @@ details = "PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch"
 name = "Cloud & DevOps"
 details = "AWS (EC2, Lambda, S3, RDS), Docker, Kubernetes, ArgoCD, CI/CD"
 
+[extra.trans.skill.caching]
+name = "Caching & Proxy"
+details = "Varnish, Nginx, Apache, Redis"
+
+[extra.trans.skill.monitoring]
+name = "Monitoring & Observability"
+details = "Datadog, Dynatrace, OpenTelemetry, Prometheus, Grafana"
+
+[extra.trans.skill.performance]
+name = "Performance Testing"
+details = "K6, InfluxDB, Grafana"
+
 [extra.trans.skill.version_control]
 name = "Version Control"
 details = "Git, GitHub, GitLab, GitHub Actions"
@@ -141,7 +153,7 @@ details = "React, Next.js, HTML5/CSS3, TailwindCSS"
 
 [extra.trans.skill.tools]
 name = "Tools & Methodologies"
-details = "Agile, TDD, Nix, Neovim, Clean Architecture, Design Patterns, Terminal-centric"
+details = "Agile, TDD, Nix, Neovim, Clean Architecture, Design Patterns"
 
 [extra.trans.skill.automation]
 name = "Automation & Scripting"

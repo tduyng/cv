@@ -18,8 +18,8 @@ summary = "Ingénieur Backend Senior chez Ekino France, spécialisé en Node.js,
 # Work Experience Translations
 [extra.trans.experience.ekino]
 role = "Ingénieur Backend Senior"
-details = """• Conception et développement de systèmes backend haute performance avec Node.js, TypeScript et NestJS
-• Conception et implémentation d'APIs RESTful et GraphQL gérant des millions de requêtes quotidiennes
+details = """• Travail sur les projets CANAL+, développement de systèmes backend haute performance avec Node.js, TypeScript et NestJS
+• Conception et architecture d'APIs RESTful et GraphQL gérant des millions de requêtes quotidiennes
 • Gestion d'infrastructure cloud sur AWS (EC2, Lambda, S3, RDS, ElastiCache)
 • Mise en place de pipelines CI/CD avec GitLab et GitHub Actions pour les déploiements automatisés
 • Orchestration d'applications conteneurisées avec Docker et Kubernetes
@@ -117,7 +117,7 @@ title = "Compétences Techniques"
 
 [extra.trans.skill.backend]
 name = "Développement Backend"
-details = "Node.js, Deno, Bun, TypeScript, NestJS, Express, Fastify, Hono, GraphQL, gRPC, APIs REST"
+details = "Node.js, Deno, Bun, TypeScript, NestJS, REST, GraphQL, gRPC"
 
 [extra.trans.skill.languages]
 name = "Langages de Programmation"
@@ -130,6 +130,18 @@ details = "PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch"
 [extra.trans.skill.cloud_devops]
 name = "Cloud & DevOps"
 details = "AWS (EC2, Lambda, S3, RDS), Docker, Kubernetes, ArgoCD, CI/CD"
+
+[extra.trans.skill.caching]
+name = "Caching & Proxy"
+details = "Varnish, Nginx, Apache, Redis"
+
+[extra.trans.skill.monitoring]
+name = "Monitoring & Observabilité"
+details = "Datadog, Dynatrace, OpenTelemetry, Prometheus, Grafana"
+
+[extra.trans.skill.performance]
+name = "Tests de Performance"
+details = "K6, InfluxDB, Grafana"
 
 [extra.trans.skill.version_control]
 name = "Contrôle de Version"

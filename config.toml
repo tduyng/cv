@@ -112,6 +112,15 @@ id = "databases"
 id = "cloud_devops"
 
 [[extra.skill]]
+id = "caching"
+
+[[extra.skill]]
+id = "monitoring"
+
+[[extra.skill]]
+id = "performance"
+
+[[extra.skill]]
 id = "version_control"
 
 [[extra.skill]]
