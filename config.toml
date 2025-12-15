@@ -31,7 +31,7 @@ driving_license = "B"
 # Work Experience - Data only (translations in content files)
 [[extra.experience]]
 id = "ekino"
-company = "Ekino France - Paris"
+company = "Ekino France - Pantin"
 time = "2021 - Present"
 
 [[extra.experience]]

@@ -140,8 +140,8 @@ name = "Monitoring & Observability"
 details = "Datadog, Dynatrace, OpenTelemetry, Prometheus, Grafana"
 
 [extra.trans.skill.performance]
-name = "Performance Testing"
-details = "K6, InfluxDB, Grafana"
+name = "Performance Testing & Reporting"
+details = "K6, Newman (Postman), InfluxDB, Prometheus, Grafana"
 
 [extra.trans.skill.version_control]
 name = "Version Control"
