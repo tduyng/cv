@@ -60,9 +60,9 @@
     /* Typography */
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
-    --font-size-base: 13px;
-    --font-size-small: 12px;
-    --font-size-large: 14px;
+    --font-size-base: 12.5px;
+    --font-size-small: 11.5px;
+    --font-size-large: 13.5px;
     --line-height-base: 1.5;
 
     /* Layout */
@@ -78,7 +78,7 @@
 }
 
 /* ===== DARK MODE - CATPPUCCIN MOCHA ===== */
-[data-theme="dark"] {
+[data-theme='dark'] {
     /* Catppuccin Mocha Colors (Dark Mode) */
     --ctp-rosewater: #f5e0dc;
     --ctp-flamingo: #f2cdcd;
@@ -158,7 +158,9 @@ body {
     padding: 30px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 h1,
@@ -176,7 +178,9 @@ h6 {
 a {
     color: var(--secondary-color);
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
 }
 
 a:hover {
@@ -216,7 +220,10 @@ li {
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr;
     min-height: 800px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 /* ===== SIDEBAR ===== */
@@ -228,7 +235,10 @@ li {
     flex-direction: column;
     min-height: 800px;
     border-right: 1px solid rgba(137, 180, 250, 0.1);
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 /* Profile Section */
@@ -248,12 +258,15 @@ li {
     margin: 0 auto var(--spacing-md);
     display: block;
     object-fit: cover;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
     filter: brightness(1.08) contrast(1.05);
     background: white;
 }
 
-[data-theme="dark"] .avatar {
+[data-theme='dark'] .avatar {
     border: 3px solid rgba(137, 180, 250, 0.3);
     box-shadow: 0 4px 12px rgba(137, 180, 250, 0.2);
     filter: brightness(1) contrast(1);
@@ -327,7 +340,9 @@ li {
     line-height: 1.5;
     padding: 8px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .contact-list li:hover {
@@ -386,7 +401,9 @@ li {
     background: rgba(137, 180, 250, 0.05);
     border-radius: 8px;
     border: 1px solid rgba(137, 180, 250, 0.1);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .education-item-sidebar:hover {
@@ -429,7 +446,9 @@ li {
     padding: 8px;
     background: rgba(137, 180, 250, 0.08);
     border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
     color: var(--text-primary);
 }
 
@@ -448,7 +467,9 @@ li {
     border-radius: 8px;
     color: var(--text-primary);
     font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .driving-license-info i {
@@ -470,7 +491,9 @@ li {
     padding: 8px;
     background: rgba(148, 226, 213, 0.05);
     border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .language-list li:last-child {
@@ -501,7 +524,10 @@ li {
     font-weight: 500;
     margin-bottom: 0;
     border: 1px solid rgba(137, 180, 250, 0.3);
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
 }
 
 /* Theme Toggle */
@@ -552,7 +578,7 @@ li {
     left: 4px;
 }
 
-[data-theme="dark"] .theme-toggle-btn::before {
+[data-theme='dark'] .theme-toggle-btn::before {
     transform: translateX(32px);
 }
 
@@ -576,11 +602,11 @@ li {
     opacity: 0.5;
 }
 
-[data-theme="dark"] .theme-icon.light-icon {
+[data-theme='dark'] .theme-icon.light-icon {
     opacity: 0.5;
 }
 
-[data-theme="dark"] .theme-icon.dark-icon {
+[data-theme='dark'] .theme-icon.dark-icon {
     opacity: 1;
     color: var(--ctp-lavender);
 }
@@ -602,7 +628,10 @@ li {
     font-size: var(--font-size-base);
     padding: 8px 16px;
     border-radius: 8px;
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
     text-decoration: none;
     border: 1px solid transparent;
 }
@@ -636,10 +665,12 @@ li {
     background: rgba(137, 180, 250, 0.03);
     border-radius: var(--border-radius);
     border: 1px solid rgba(137, 180, 250, 0.15);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
 }
 
-[data-theme="dark"] .content-section {
+[data-theme='dark'] .content-section {
     background: rgba(49, 50, 68, 0.5);
 }
 
@@ -660,7 +691,9 @@ li {
     align-items: center;
     gap: 8px;
     letter-spacing: 0.05em;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .content-section-title::before {
@@ -713,7 +746,9 @@ li {
     background: var(--primary-color);
     border-radius: 50%;
     box-shadow: 0 0 0 4px var(--bg-card);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .experience-item:last-child,
@@ -751,7 +786,10 @@ li {
     background: rgba(148, 226, 213, 0.1);
     border-radius: 6px;
     border: 1px solid rgba(148, 226, 213, 0.2);
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .item-company,
@@ -793,7 +831,10 @@ li {
     background: rgba(137, 180, 250, 0.05);
     border-radius: 8px;
     border: 1px solid rgba(137, 180, 250, 0.15);
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -860,7 +901,9 @@ li {
     background: rgba(137, 180, 250, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(137, 180, 250, 0.12);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .skill-item:hover {
@@ -881,7 +924,7 @@ li {
 
 .skill-details {
     color: var(--text-secondary);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-small);
     line-height: 1.6;
     margin: 0;
     transition: color 0.3s ease;
@@ -922,7 +965,7 @@ li {
     .item-time {
         white-space: normal;
     }
-    
+
     /* Projects and skills grid to single column on tablets */
     .projects-grid,
     .skills-list {
@@ -1023,16 +1066,16 @@ li {
         print-color-adjust: exact !important;
         color-adjust: exact !important;
     }
-    
+
     /* A4 page setup */
     @page {
         size: A4 portrait;
         margin: 12mm;
     }
-    
+
     /* Force light mode for printing */
     :root,
-    [data-theme="dark"] {
+    [data-theme='dark'] {
         /* Override to Catppuccin Latte colors for print */
         --ctp-text: #4c4f69;
         --ctp-subtext1: #5c5f77;
@@ -1043,35 +1086,36 @@ li {
         --ctp-sapphire: #209fb5;
         --ctp-teal: #179299;
         --ctp-lavender: #7287fd;
-        
+
         --bg-body: #ffffff;
         --bg-card: #ffffff;
         --bg-sidebar: #f5f7fa;
         --bg-profile: #e6e9ef;
-        
+
         --text-primary: #4c4f69;
         --text-secondary: #5c5f77;
         --text-muted: #7c7f93;
         --text-bold: #1e66f5;
-        
+
         --primary-color: #1e66f5;
         --secondary-color: #209fb5;
         --accent-color: #179299;
-        
+
         /* Compact print spacing */
         --spacing-xs: 0.3rem;
         --spacing-sm: 0.5rem;
         --spacing-md: 0.8rem;
         --spacing-lg: 1rem;
         --spacing-xl: 1.2rem;
-        
+
         /* Readable fonts for print */
         --font-size-base: 10pt;
         --font-size-small: 9pt;
         --font-size-large: 11pt;
     }
-    
-    html, body {
+
+    html,
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
@@ -1104,12 +1148,12 @@ li {
         padding: 0;
         min-height: auto;
     }
-    
+
     .profile-section {
         background: #e6e9ef !important;
         padding: 10px 8px !important;
     }
-    
+
     .avatar {
         width: 60px !important;
         height: 60px !important;
@@ -1119,40 +1163,40 @@ li {
         filter: brightness(1.05) contrast(1.02) !important;
         background: white !important;
     }
-    
+
     .name {
         font-size: 14pt !important;
         margin: 0 0 3px 0 !important;
         color: #1e66f5 !important;
         line-height: 1.1 !important;
     }
-    
+
     .tagline {
         font-size: 8.5pt !important;
         line-height: 1.3 !important;
         color: #5c5f77 !important;
         margin: 0 !important;
     }
-    
+
     /* Compact sidebar sections */
     .sidebar-section {
         padding: 6px 8px !important;
         border-top: 1px solid rgba(137, 180, 250, 0.15);
     }
-    
+
     .section-title {
         font-size: 8.5pt !important;
         margin: 0 0 5px 0 !important;
         color: #1e66f5 !important;
         letter-spacing: 0.03em;
     }
-    
+
     .section-title::before {
         width: 2.5px;
         height: 10px;
         background: #1e66f5 !important;
     }
-    
+
     /* Compact contact list */
     .contact-list li {
         margin-bottom: 3px !important;
@@ -1161,18 +1205,18 @@ li {
         line-height: 1.3 !important;
         gap: 5px !important;
     }
-    
+
     .contact-list i {
         font-size: 10px !important;
         width: 14px !important;
         color: #179299 !important;
     }
-    
+
     .contact-list a {
         color: #4c4f69 !important;
         font-size: 7.5pt !important;
     }
-    
+
     /* Compact education in sidebar */
     .education-item-sidebar {
         margin-bottom: 6px !important;
@@ -1180,21 +1224,21 @@ li {
         background: rgba(137, 180, 250, 0.08) !important;
         border: 1px solid rgba(137, 180, 250, 0.15) !important;
     }
-    
+
     .education-item-sidebar .degree {
         font-size: 8pt !important;
         margin-bottom: 2px !important;
         line-height: 1.2 !important;
         color: #1e66f5 !important;
     }
-    
+
     .education-item-sidebar .university,
     .education-item-sidebar .time {
         font-size: 7.5pt !important;
         margin-bottom: 1px !important;
         line-height: 1.2 !important;
     }
-    
+
     /* Compact nationality, driving license */
     .nationality-list li {
         margin-bottom: 3px !important;
@@ -1202,7 +1246,7 @@ li {
         font-size: 8pt !important;
         background: rgba(137, 180, 250, 0.08) !important;
     }
-    
+
     .driving-license-info {
         padding: 4px !important;
         font-size: 8pt !important;
@@ -1210,12 +1254,12 @@ li {
         background: rgba(137, 180, 250, 0.08) !important;
         color: #4c4f69 !important;
     }
-    
+
     .driving-license-info i {
         font-size: 10px !important;
         color: #179299 !important;
     }
-    
+
     /* Compact languages */
     .language-list li {
         margin-bottom: 4px !important;
@@ -1223,12 +1267,12 @@ li {
         font-size: 8pt !important;
         background: rgba(148, 226, 213, 0.08) !important;
     }
-    
+
     /* Compact interests */
     .interest-list {
         gap: 3px !important;
     }
-    
+
     .interest-list li {
         padding: 3px 6px !important;
         font-size: 7.5pt !important;
@@ -1261,7 +1305,7 @@ li {
         page-break-inside: avoid;
         border-radius: 3px;
     }
-    
+
     .content-section:last-child {
         margin-bottom: 0 !important;
     }
@@ -1274,14 +1318,14 @@ li {
         border-bottom: 1px solid #ddd !important;
         letter-spacing: 0.02em;
     }
-    
+
     .content-section-title::before {
         width: 25px;
         height: 2.5px;
         bottom: -1px;
         background: #1e66f5 !important;
     }
-    
+
     .content-section-title i {
         color: #179299 !important;
         font-size: 12px !important;
@@ -1304,7 +1348,7 @@ li {
         border-left: 2px solid #1e66f5 !important;
         page-break-inside: avoid;
     }
-    
+
     .experience-item::before,
     .education-item::before {
         left: -5.5px;
@@ -1314,24 +1358,24 @@ li {
         background: #1e66f5 !important;
         box-shadow: 0 0 0 2.5px white !important;
     }
-    
+
     .experience-item:last-child,
     .education-item:last-child {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important;
     }
-    
+
     .item-header {
         margin-bottom: 3px !important;
         gap: 6px !important;
     }
-    
+
     .item-title {
         font-size: 10pt !important;
         color: #1e66f5 !important;
         font-weight: 600 !important;
     }
-    
+
     .item-time {
         font-size: 8pt !important;
         padding: 2px 6px !important;
@@ -1339,26 +1383,26 @@ li {
         border: 1px solid #ddd !important;
         color: #179299 !important;
     }
-    
+
     .item-company,
     .item-university {
         font-size: 9pt !important;
         margin-bottom: 3px !important;
         color: #7c7f93 !important;
     }
-    
+
     .item-details {
         font-size: 9pt !important;
         line-height: 1.4 !important;
         color: #5c5f77 !important;
     }
-    
+
     .item-details ul {
         margin-top: 3px !important;
         margin-bottom: 3px !important;
         padding-left: 1.2em !important;
     }
-    
+
     .item-details li {
         margin-bottom: 2px !important;
     }
@@ -1370,7 +1414,7 @@ li {
         gap: 6px !important;
         margin-top: 4px !important;
     }
-    
+
     .skill-item {
         padding: 6px 8px !important;
         background: white !important;
@@ -1378,14 +1422,14 @@ li {
         border-radius: 4px;
         page-break-inside: avoid;
     }
-    
+
     .skill-name {
         font-size: 9.5pt !important;
         margin-bottom: 3px !important;
         color: #1e66f5 !important;
         font-weight: 600 !important;
     }
-    
+
     .skill-details {
         font-size: 8.5pt !important;
         line-height: 1.35 !important;
@@ -1399,7 +1443,7 @@ li {
         gap: 6px !important;
         margin-top: 4px !important;
     }
-    
+
     .project-item {
         padding: 6px 8px !important;
         background: white !important;
@@ -1408,22 +1452,22 @@ li {
         page-break-inside: avoid;
         gap: 3px !important;
     }
-    
+
     .project-title {
         font-size: 9.5pt !important;
         color: #209fb5 !important;
         font-weight: 600 !important;
     }
-    
+
     .project-title a {
         color: inherit !important;
         font-size: 9.5pt !important;
     }
-    
+
     .project-title a::before {
         font-size: 9.5pt !important;
     }
-    
+
     .project-tagline {
         font-size: 8pt !important;
         line-height: 1.35 !important;
@@ -1435,18 +1479,24 @@ li {
         text-decoration: none;
         color: #209fb5 !important;
     }
-    
+
     /* Page breaks */
     .content-section {
         page-break-inside: avoid;
     }
-    
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         page-break-after: avoid;
     }
-    
+
     /* Orphans and widows control */
-    p, li {
+    p,
+    li {
         orphans: 3;
         widows: 3;
     }
