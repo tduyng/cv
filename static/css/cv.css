@@ -822,12 +822,12 @@ li {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     margin-top: var(--spacing-sm);
 }
 
 .project-item {
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-sm);
     background: rgba(137, 180, 250, 0.05);
     border-radius: 8px;
     border: 1px solid rgba(137, 180, 250, 0.15);
@@ -889,7 +889,7 @@ li {
 .skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     margin-top: var(--spacing-sm);
 }
 
@@ -897,7 +897,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
     background: rgba(137, 180, 250, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(137, 180, 250, 0.12);
