@@ -2,6 +2,9 @@ base_url = "https://cv.tduyng.com"
 title = "Duy NG - CV"
 description = "Senior Backend Engineer - Node.js, TypeScript, AWS"
 output_dir = "public"
+minify_css = true
+minify_html = true
+minify_js = true
 
 #=========================================================================================
 # IMMUTABLE DATA - Facts that never change regardless of language
