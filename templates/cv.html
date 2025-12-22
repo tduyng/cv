@@ -1,64 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Page.Config.extra.lang }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>{{ .Page.Config.title }}</title>
-    <meta name="description" content="{{ .Site.Config.description }}">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="{{ .Site.Config.extra.base_path }}/favicon.ico">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="{{ .Site.Config.extra.base_path }}/css/cv.css">
-    
-    <!-- Theme Script (load early to prevent flash) -->
-    
-    <!-- Umami Analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="0b914cf1-9565-4a5c-a2f3-fe302b6b3b78"></script>
-    <script src="{{ .Site.Config.extra.base_path }}/js/theme.js"></script>
-    
-    <!-- SEO & Social -->
-    <meta property="og:title" content="{{ .Page.Config.title }}">
-    <meta property="og:description" content="{{ .Site.Config.description }}">
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="{{ .Site.Config.base_url }}">
-    <meta property="og:image" content="{{ .Site.Config.base_url }}{{ .Site.Config.extra.avatar }}">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ .Page.Config.title }}">
-    <meta name="twitter:description" content="{{ .Site.Config.description }}">
-    
-    <!-- Language alternates -->
-    {{ if eq .Page.Config.extra.lang "en" }}
-    <link rel="alternate" hreflang="fr" href="{{ .Site.Config.base_url }}/fr/">
-    {{ else }}
-    <link rel="alternate" hreflang="en" href="{{ .Site.Config.base_url }}/en/">
-    {{ end }}
-</head>
-<body>
-    <div class="cv-wrapper">
-        <!-- Sidebar -->
-        {{ template "partials/_sidebar.html" . }}
-        
-        <!-- Main Content -->
-        <main class="main-content">
-            {{ template "partials/_career.html" . }}
-            {{ template "partials/_experiences.html" . }}
-            {{ template "partials/_skills.html" . }}
-            {{ template "partials/_projects.html" . }}
-            {{ template "partials/_footer.html" . }}
-        </main>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>{{ .Page.Config.title }}</title>
+        <meta name="description" content="{{ .Site.Config.description }}" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ .Site.Config.extra.base_path }}/favicon.png" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="{{ .Site.Config.extra.base_path }}/css/cv.css" />
+
+        <!-- Theme Script (load early to prevent flash) -->
+
+        <!-- Umami Analytics -->
+        <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="0b914cf1-9565-4a5c-a2f3-fe302b6b3b78"
+        ></script>
+        <script src="{{ .Site.Config.extra.base_path }}/js/theme.js"></script>
+
+        <!-- SEO & Social -->
+        <meta property="og:title" content="{{ .Page.Config.title }}" />
+        <meta property="og:description" content="{{ .Site.Config.description }}" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="{{ .Site.Config.base_url }}" />
+        <meta
+            property="og:image"
+            content="{{ .Site.Config.base_url }}{{ .Site.Config.extra.avatar }}"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="{{ .Page.Config.title }}" />
+        <meta name="twitter:description" content="{{ .Site.Config.description }}" />
+
+        <!-- Language alternates -->
+        {{ if eq .Page.Config.extra.lang "en" }}
+        <link rel="alternate" hreflang="fr" href="{{ .Site.Config.base_url }}/fr/" />
+        {{ else }}
+        <link rel="alternate" hreflang="en" href="{{ .Site.Config.base_url }}/en/" />
+        {{ end }}
+    </head>
+    <body>
+        <div class="cv-wrapper">
+            <!-- Sidebar -->
+            {{ template "partials/_sidebar.html" . }}
+
+            <!-- Main Content -->
+            <main class="main-content">
+                {{ template "partials/_career.html" . }} {{ template "partials/_experiences.html" .
+                }} {{ template "partials/_skills.html" . }} {{ template "partials/_projects.html" .
+                }} {{ template "partials/_footer.html" . }}
+            </main>
+        </div>
+    </body>
 </html>

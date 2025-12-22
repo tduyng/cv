@@ -1,67 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Page.Config.title }}</title>
-    <meta http-equiv="refresh" content="0; url={{ .Site.Config.extra.base_path }}/{{ .Site.Config.extra.default_language }}/">
-    
-    <!-- Favicon -->
-    
-    <!-- Umami Analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="0b914cf1-9565-4a5c-a2f3-fe302b6b3b78"></script>
-    <link rel="icon" href="{{ .Site.Config.extra.base_path }}/favicon.ico">
-    
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: #f5f5f5;
-            color: #3F4650;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-        }
-        h1 {
-            color: #4CAC9D;
-            margin-bottom: 2rem;
-        }
-        .lang-links {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-        }
-        a {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: #4CAC9D;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(76, 172, 157, 0.3);
-        }
-        a:hover {
-            background: #3a8d81;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(76, 172, 157, 0.4);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Select Your Language / Choisissez votre langue</h1>
-        <div class="lang-links">
-            <a href="{{ .Site.Config.extra.base_path }}/en/">English</a>
-            <a href="{{ .Site.Config.extra.base_path }}/fr/">Français</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ .Page.Config.title }}</title>
+        <meta
+            http-equiv="refresh"
+            content="0; url={{ .Site.Config.extra.base_path }}/{{ .Site.Config.extra.default_language }}/"
+        />
+
+        <!-- Favicon -->
+
+        <!-- Umami Analytics -->
+        <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="0b914cf1-9565-4a5c-a2f3-fe302b6b3b78"
+        ></script>
+        <link rel="icon" type="image/png" href="{{ .Site.Config.extra.base_path }}/favicon.png" />
+
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                background: #f5f5f5;
+                color: #3f4650;
+            }
+            .container {
+                text-align: center;
+                padding: 2rem;
+            }
+            h1 {
+                color: #4cac9d;
+                margin-bottom: 2rem;
+            }
+            .lang-links {
+                display: flex;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+            a {
+                display: inline-block;
+                padding: 1rem 2rem;
+                background: #4cac9d;
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 12px rgba(76, 172, 157, 0.3);
+            }
+            a:hover {
+                background: #3a8d81;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 16px rgba(76, 172, 157, 0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Select Your Language / Choisissez votre langue</h1>
+            <div class="lang-links">
+                <a href="{{ .Site.Config.extra.base_path }}/en/">English</a>
+                <a href="{{ .Site.Config.extra.base_path }}/fr/">Français</a>
+            </div>
+            <p style="margin-top: 2rem; color: #97aac3">
+                Redirecting to default language... / Redirection vers la langue par défaut...
+            </p>
         </div>
-        <p style="margin-top: 2rem; color: #97AAC3;">Redirecting to default language... / Redirection vers la langue par défaut...</p>
-    </div>
-</body>
+    </body>
 </html>
