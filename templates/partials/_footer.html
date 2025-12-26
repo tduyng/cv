@@ -1,10 +1,9 @@
-<footer class="cv-footer">
-    <p>
-        {{ .Site.Config.extra.footer_copyright }} |
-        {{ if eq .Page.Config.lang "fr" }}
-        Généré avec <a href="https://github.com/tduyng/gozzi" target="_blank" rel="noopener noreferrer">Gozzi</a>
-        {{ else }}
-        Generated with <a href="https://github.com/tduyng/gozzi" target="_blank" rel="noopener noreferrer">Gozzi</a>
-        {{ end }}
-    </p>
+<!-- Floating Footer - Hidden on print -->
+<footer class="floating-footer">
+    {{ .Site.Config.extra.footer_copyright }} |
+    {{ if eq .Page.Config.lang "fr" }}
+    Généré avec <a href="https://github.com/tduyng/gozzi" target="_blank" rel="noopener noreferrer">Gozzi</a>
+    {{ else }}
+    Generated with <a href="https://github.com/tduyng/gozzi" target="_blank" rel="noopener noreferrer">Gozzi</a>
+    {{ end }}
 </footer>

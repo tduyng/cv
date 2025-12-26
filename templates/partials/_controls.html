@@ -1,0 +1,26 @@
+<!-- Floating Controls - Hidden on print -->
+<div class="floating-controls">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="control-btn theme-btn" aria-label="Toggle theme" title="Toggle dark/light theme">
+        <span class="theme-icon light-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <span class="theme-icon dark-icon">
+            <i class="fas fa-moon"></i>
+        </span>
+    </button>
+
+    <!-- Language Switcher -->
+    {{ if .Site.Config.i18n_enabled }}
+    <div class="control-btn lang-switcher">
+        {{ range $index, $lang := .Site.Config.languages }}
+            {{ if gt $index 0 }}<span class="separator">|</span>{{ end }}
+            <a href="{{ langURL $lang.code $.Page }}"
+               class="lang-link {{ if eq $lang.code (currentLang $.Page.Config) }}active{{ end }}"
+               title="Switch to {{ $lang.name }}">
+                {{ $lang.code | upper }}
+            </a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>

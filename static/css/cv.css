@@ -930,19 +930,40 @@ li {
     transition: color 0.3s ease;
 }
 
-/* Footer */
-.cv-footer {
-    padding-top: var(--spacing-lg);
-    margin-top: var(--spacing-xl);
-    border-top: 1px solid rgba(137, 180, 250, 0.2);
-    text-align: center;
-    color: var(--text-muted);
+/* Floating Footer - Right Side Below Controls */
+.floating-footer {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    background: var(--bg-card);
+    border: 1px solid rgba(137, 180, 250, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
     font-size: var(--font-size-small);
+    color: var(--text-muted);
+    text-align: right;
+    transition: all 0.3s ease;
+    max-width: 280px;
+    line-height: 1.4;
 }
 
-.cv-footer a {
+.floating-footer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.floating-footer a {
     color: var(--secondary-color);
     font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.floating-footer a:hover {
+    color: var(--primary-color);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -1280,12 +1301,13 @@ li {
         background: rgba(137, 180, 250, 0.1) !important;
     }
 
-    /* Hide theme toggle, language switcher, and footer */
+    /* Hide theme toggle, language switcher, footer, and floating controls */
     .theme-toggle-container,
     .language-switcher,
     .github-stats,
     .cv-footer,
-    footer.cv-footer {
+    footer.cv-footer,
+    .floating-footer {
         display: none !important;
     }
 
@@ -1541,4 +1563,143 @@ li {
 }
 .mb-4 {
     margin-bottom: var(--spacing-lg);
+}
+
+/* ===== FLOATING CONTROLS ===== */
+.floating-controls {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.control-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+    min-width: 2.5rem;
+    justify-content: center;
+}
+
+.theme-icon {
+    display: none;
+    color: var(--text-primary);
+}
+
+/* Show sun icon in light mode, moon in dark mode */
+:root .theme-icon.light-icon,
+[data-theme='dark'] .theme-icon.dark-icon {
+    display: inline-block;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.lang-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.lang-link:hover {
+    color: var(--primary-color);
+    background: var(--bg-profile);
+}
+
+.lang-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.lang-switcher .separator {
+    color: var(--border-color);
+    margin: 0 0.25rem;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .floating-controls {
+        top: 1rem;
+        right: 1rem;
+        gap: 0.5rem;
+    }
+
+    .control-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .theme-btn {
+        min-width: 2.25rem;
+    }
+
+    .floating-footer {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.65rem;
+        max-width: 200px;
+    }
+}
+
+/* ===== PRINT STYLES - HIDE CONTROLS ===== */
+@media print {
+    .floating-controls,
+    .floating-footer {
+        display: none !important;
+    }
+
+    /* Ensure CV prints beautifully */
+    body {
+        background: white;
+    }
+
+    .cv-wrapper {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        page-break-inside: avoid;
+    }
+
+    .experience-item,
+    .skill-item,
+    .project-item {
+        page-break-inside: avoid;
+    }
+
+    /* Remove interactive elements from print */
+    a[href^='http']::after {
+        content: none;
+    }
 }

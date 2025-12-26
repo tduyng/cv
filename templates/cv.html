@@ -63,6 +63,9 @@
         {{ end }}
     </head>
     <body>
+        <!-- Floating Controls (completely separate from CV layout) -->
+        {{ template "partials/_controls.html" . }}
+
         <div class="cv-wrapper">
             <!-- Sidebar -->
             {{ template "partials/_sidebar.html" . }}
@@ -70,9 +73,11 @@
             <!-- Main Content -->
             <main class="main-content">
                 {{ template "partials/_career.html" . }} {{ template "partials/_experiences.html" .
-                }} {{ template "partials/_skills.html" . }} {{ template "partials/_projects.html" .
-                }} {{ template "partials/_footer.html" . }}
+                }} {{ template "partials/_skills.html" . }} {{ template "partials/_projects.html" . }}
             </main>
         </div>
+
+        <!-- Floating Footer (completely separate from CV layout) -->
+        {{ template "partials/_footer.html" . }}
     </body>
 </html>
