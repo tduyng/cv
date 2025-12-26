@@ -195,8 +195,16 @@
         </div>
         
         <!-- Language Switcher -->
+        {{ if .Site.Config.i18n_enabled }}
         <div class="language-switcher">
-            <span>|</span>
+            {{ range $index, $lang := .Site.Config.languages }}
+                {{ if gt $index 0 }}<span class="separator">|</span>{{ end }}
+                <a href="{{ langURL $lang.code $.Page }}"
+                   class="{{ if eq $lang.code (currentLang $.Page.Config) }}active{{ end }}">
+                    {{ $lang.code | upper }}
+                </a>
+            {{ end }}
         </div>
+        {{ end }}
     </div>
 </aside>

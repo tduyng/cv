@@ -4,10 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ .Page.Config.title }}</title>
-        <meta
-            http-equiv="refresh"
-            content="0; url={{ .Site.Config.extra.base_path }}/{{ .Site.Config.extra.default_language }}/"
-        />
+        <!-- Auto-redirect to default language -->
+        {{ if .Site.Config.default_language }}
+        <meta http-equiv="refresh" content="0; url={{ .Site.Config.extra.base_path }}/{{ .Site.Config.default_language.code }}/" />
+        {{ else }}
+        <meta http-equiv="refresh" content="0; url={{ .Site.Config.extra.base_path }}/fr/" />
+        {{ end }}
 
         <!-- Favicon -->
 
@@ -65,8 +67,14 @@
         <div class="container">
             <h1>Select Your Language / Choisissez votre langue</h1>
             <div class="lang-links">
+                {{ if .Site.Config.i18n_enabled }}
+                    {{ range .Site.Config.languages }}
+                    <a href="{{ $.Site.Config.extra.base_path }}/{{ .code }}/">{{ .name }}</a>
+                    {{ end }}
+                {{ else }}
                 <a href="{{ .Site.Config.extra.base_path }}/en/">English</a>
                 <a href="{{ .Site.Config.extra.base_path }}/fr/">Français</a>
+                {{ end }}
             </div>
             <p style="margin-top: 2rem; color: #97aac3">
                 Redirecting to default language... / Redirection vers la langue par défaut...
