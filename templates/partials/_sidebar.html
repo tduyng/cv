@@ -1,23 +1,19 @@
 {{ $profile := .Site.Config.data.profile }}
-{{ $t := .Site.Config.data.translations.en }}
-{{ if eq .Page.Config.extra.lang "fr" }}
-    {{ $t = .Site.Config.data.translations.fr }}
-{{ end }}
 
 <aside class="sidebar">
     <!-- Profile Section -->
     <div class="profile-section">
-        <img src="{{ .Site.Config.extra.base_path }}/images/{{ $profile.avatar }}" 
-             alt="{{ $profile.name }}" 
+        <img src="{{ .Site.Config.extra.base_path }}/images/{{ $profile.avatar }}"
+             alt="{{ $profile.name }}"
              class="avatar">
         <h1 class="name">{{ $profile.name }}</h1>
-        <p class="tagline">{{ $t.tagline }}</p>
+        <p class="tagline">{{ i18n "tagline" .Page.Config }}</p>
     </div>
-    
+
     <!-- Contact Section -->
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ $t.section.contact }}
+            {{ i18n "section.contact" .Page.Config }}
         </h2>
         <ul class="contact-list">
             {{ if $profile.email }}
@@ -112,13 +108,12 @@
     {{ if $education }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ $t.section.education }}
+            {{ i18n "section.education" .Page.Config }}
         </h2>
         <div class="education-list">
             {{ range $education }}
-                {{ $trans := index $t.education .id }}
             <div class="education-item-sidebar">
-                <div class="degree">{{ $trans.degree }}</div>
+                <div class="degree">{{ i18n (printf "education.%s.degree" .id) $.Page.Config }}</div>
                 <div class="university">{{ .university }}</div>
                 <div class="time">{{ .time }}</div>
             </div>
@@ -131,12 +126,11 @@
     {{ if $profile.nationalities }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ $t.section.nationality }}
+            {{ i18n "section.nationality" .Page.Config }}
         </h2>
         <ul class="nationality-list">
             {{ range $profile.nationalities }}
-                {{ $nat := index $t.nationality . }}
-            <li>{{ $nat }}</li>
+            <li>{{ i18n (printf "nationality.%s" .) $.Page.Config }}</li>
             {{ end }}
         </ul>
     </div>
@@ -146,7 +140,7 @@
     {{ if $profile.driving_license }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ $t.section.driving_license }}
+            {{ i18n "section.driving_license" .Page.Config }}
         </h2>
         <div class="driving-license-info">
             <i class="fas fa-car"></i>
@@ -160,13 +154,12 @@
     {{ if $languages }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ $t.section.languages }}
+            {{ i18n "section.languages" .Page.Config }}
         </h2>
         <ul class="language-list">
             {{ range $languages }}
-                {{ $trans := index $t.language .id }}
             <li>
-                <strong>{{ $trans.name }}:</strong> {{ if .level }}{{ .level }}{{ else }}{{ $trans.level }}{{ end }}
+                <strong>{{ i18n (printf "language.%s.name" .id) $.Page.Config }}:</strong> {{ if .level }}{{ .level }}{{ else }}{{ i18n (printf "language.%s.level" .id) $.Page.Config }}{{ end }}
             </li>
             {{ end }}
         </ul>
@@ -177,12 +170,11 @@
     {{ if $profile.interests }}
     <div class="sidebar-section">
         <h2 class="section-title">
-            {{ $t.section.interests }}
+            {{ i18n "section.interests" .Page.Config }}
         </h2>
         <ul class="interest-list">
             {{ range $profile.interests }}
-                {{ $trans := index $t.interest . }}
-            <li>{{ $trans }}</li>
+            <li>{{ i18n (printf "interest.%s" .) $.Page.Config }}</li>
             {{ end }}
         </ul>
     </div>
@@ -204,9 +196,7 @@
         
         <!-- Language Switcher -->
         <div class="language-switcher">
-            <a href="{{ .Site.Config.extra.base_path }}/en/" {{ if eq .Page.Config.extra.lang "en" }}class="active"{{ end }}>EN</a>
             <span>|</span>
-            <a href="{{ .Site.Config.extra.base_path }}/fr/" {{ if eq .Page.Config.extra.lang "fr" }}class="active"{{ end }}>FR</a>
         </div>
     </div>
 </aside>

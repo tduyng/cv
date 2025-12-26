@@ -1,26 +1,19 @@
-{{ $t := .Site.Config.data.translations.en }}
-{{ if eq .Page.Config.extra.lang "fr" }}
-    {{ $t = .Site.Config.data.translations.fr }}
-{{ end }}
 {{ $projects := .Site.Config.data.projects.project }}
 
 {{ if $projects }}
 <section class="content-section">
     <h2 class="content-section-title">
         <i class="fas fa-code-branch"></i>
-        {{ $t.project.title }}
+        {{ i18n "project.title" .Page.Config }}
     </h2>
-    
+
     <div class="projects-grid">
         {{ range $projects }}
-            {{ $trans := index $t.project .id }}
         <div class="project-item">
             <h3 class="project-title">
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ $trans.title }}</a>
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ i18n (printf "project.%s.title" .id) $.Page.Config }}</a>
             </h3>
-            {{ if $trans.tagline }}
-            <p class="project-tagline">{{ $trans.tagline }}</p>
-            {{ end }}
+            <p class="project-tagline">{{ i18n (printf "project.%s.tagline" .id) $.Page.Config }}</p>
         </div>
         {{ end }}
     </div>

@@ -1,27 +1,20 @@
-{{ $t := .Site.Config.data.translations.en }}
-{{ if eq .Page.Config.extra.lang "fr" }}
-    {{ $t = .Site.Config.data.translations.fr }}
-{{ end }}
 {{ $experiences := .Site.Config.data.experiences.experience }}
 
 {{ if $experiences }}
 <section class="content-section">
     <h2 class="content-section-title">
         <i class="fas fa-briefcase"></i>
-        {{ $t.section.experiences }}
+        {{ i18n "section.experiences" .Page.Config }}
     </h2>
-    
+
     {{ range $experiences }}
-        {{ $trans := index $t.experience .id }}
     <div class="experience-item">
         <div class="item-header">
-            <h3 class="item-title">{{ $trans.role }}</h3>
+            <h3 class="item-title">{{ i18n (printf "experience.%s.role" .id) $.Page.Config }}</h3>
             <span class="item-time">{{ .time }}</span>
         </div>
         <div class="item-company">{{ .company }}</div>
-        {{ if $trans.details }}
-        <div class="item-details">{{ $trans.details }}</div>
-        {{ end }}
+        <div class="item-details">{{ i18n (printf "experience.%s.details" .id) $.Page.Config }}</div>
     </div>
     {{ end }}
 </section>

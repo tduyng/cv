@@ -1,16 +1,9 @@
-{{ $t := .Site.Config.data.translations.en }}
-{{ if eq .Page.Config.extra.lang "fr" }}
-    {{ $t = .Site.Config.data.translations.fr }}
-{{ end }}
-
-{{ if $t.career }}
 <section class="content-section">
     <h2 class="content-section-title">
         <i class="fas fa-user-circle"></i>
-        {{ $t.career.title }}
+        {{ i18n "career.title" .Page.Config }}
     </h2>
     <div class="career-summary">
-        {{ $t.career.summary }}
+        {{ i18n "career.summary" .Page.Config }}
     </div>
 </section>
-{{ end }}

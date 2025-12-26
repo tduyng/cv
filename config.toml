@@ -1,13 +1,25 @@
 base_url = "https://cv.tduyng.com"
 title = "Duy NG - CV"
 description = "Senior Backend Engineer - Node.js, TypeScript, AWS"
+language = "fr"
 output_dir = "public"
 minify_css = true
 minify_html = true
 minify_js = true
 
+# Internationalization
+[languages]
+default = "fr"
+
+[languages.fr]
+name = "Français"
+weight = 1
+
+[languages.en]
+name = "English"
+weight = 2
+
 # Site configuration
 [extra]
-default_language = "fr"
 base_path = ""
 footer_copyright = "©2025 Duy NG"

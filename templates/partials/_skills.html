@@ -1,22 +1,17 @@
-{{ $t := .Site.Config.data.translations.en }}
-{{ if eq .Page.Config.extra.lang "fr" }}
-    {{ $t = .Site.Config.data.translations.fr }}
-{{ end }}
 {{ $skills := .Site.Config.data.skills.skill }}
 
 {{ if $skills }}
 <section class="content-section skills-section">
     <h2 class="content-section-title">
         <i class="fas fa-tools"></i>
-        {{ $t.skill.title }}
+        {{ i18n "skill.title" .Page.Config }}
     </h2>
-    
+
     <div class="skills-list">
         {{ range $skills }}
-            {{ $trans := index $t.skill .id }}
         <div class="skill-item">
-            <h3 class="skill-name">{{ $trans.name }}</h3>
-            <div class="skill-details">{{ $trans.details }}</div>
+            <h3 class="skill-name">{{ i18n (printf "skill.%s.name" .id) $.Page.Config }}</h3>
+            <div class="skill-details">{{ i18n (printf "skill.%s.details" .id) $.Page.Config }}</div>
         </div>
         {{ end }}
     </div>
