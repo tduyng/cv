@@ -75,6 +75,9 @@
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    /* Borders */
+    --border-color: rgba(137, 180, 250, 0.2);
 }
 
 /* ===== DARK MODE - CATPPUCCIN MOCHA ===== */
@@ -132,6 +135,9 @@
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+    /* Borders - Dark */
+    --border-color: rgba(137, 180, 250, 0.3);
 }
 
 /* ===== RESET & BASE STYLES ===== */
