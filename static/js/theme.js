@@ -59,6 +59,16 @@
                 themeToggle.click()
             }
         })
+
+        // Prevent reload when clicking active language
+        const languageSwitcher = document.querySelector('.language-switcher')
+        if (languageSwitcher) {
+            languageSwitcher.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A' && e.target.classList.contains('active')) {
+                    e.preventDefault()
+                }
+            })
+        }
     })
 
     // Listen for system theme changes (optional)
