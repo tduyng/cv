@@ -1,0 +1,15 @@
+name = "Duy NG"
+email = "tduyng.dev@gmail.com"
+phone = "+33 7 58 04 38 28"
+website = "tduyng.com"
+avatar = "profile.png"
+linkedin = "tienduy-nguyen"
+github = "tduyng"
+twitter = "tduyng"
+driving_license = "B"
+
+# Nationalities - IDs for translation lookup
+nationalities = ["french", "vietnamese"]
+
+# Interests - IDs for translation lookup
+interests = ["rollerblade", "pingpong", "skiing", "reading", "film"]

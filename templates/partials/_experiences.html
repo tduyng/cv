@@ -1,12 +1,18 @@
-{{ if .Site.Config.extra.experience }}
+{{ $t := .Site.Config.data.translations.en }}
+{{ if eq .Page.Config.extra.lang "fr" }}
+    {{ $t = .Site.Config.data.translations.fr }}
+{{ end }}
+{{ $experiences := .Site.Config.data.experiences.experience }}
+
+{{ if $experiences }}
 <section class="content-section">
     <h2 class="content-section-title">
         <i class="fas fa-briefcase"></i>
-        {{ if eq .Page.Config.extra.lang "fr" }}Expériences Professionnelles{{ else }}Experiences{{ end }}
+        {{ $t.section.experiences }}
     </h2>
     
-    {{ range .Site.Config.extra.experience }}
-        {{ $trans := index $.Page.Config.extra.trans.experience .id }}
+    {{ range $experiences }}
+        {{ $trans := index $t.experience .id }}
     <div class="experience-item">
         <div class="item-header">
             <h3 class="item-title">{{ $trans.role }}</h3>

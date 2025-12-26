@@ -1,0 +1,167 @@
+# Profile
+tagline = "Senior Backend Engineer | Node.js, TypeScript, AWS"
+
+# Career Profile
+[career]
+title = "Career Profile"
+summary = '''
+Senior Backend Engineer at Ekino France, specializing in Node.js, TypeScript, and AWS for scalable, high-performance applications. With a strong foundation in software architecture and cloud infrastructure, I build robust backend systems that handle heavy workloads reliably. Before transitioning to backend development, I worked as a BIM Engineer at VINCI Construction France, where I developed automation tools and plugins using C#, demonstrating my versatility across different technology stacks.
+'''
+
+# Section Titles
+[section]
+contact = "Contact"
+education = "Education"
+nationality = "Nationality"
+driving_license = "Driving License"
+languages = "Languages"
+interests = "Interests"
+experiences = "Experiences"
+
+# Work Experience Translations
+[experience.ekino]
+role = "Senior Backend Engineer"
+details = '''
+• Working on CANAL+ projects, developing high-performance backend systems using Node.js, TypeScript, and NestJS
+• Architected and designed RESTful and GraphQL APIs handling millions of requests daily
+• Managed cloud infrastructure on AWS (EC2, Lambda, S3, RDS, ElastiCache)
+• Implemented CI/CD pipelines with GitLab and GitHub Actions for automated deployments
+• Orchestrated containerized applications with Docker and Kubernetes
+• Optimized database performance across PostgreSQL, MySQL, MongoDB, Redis, and Elasticsearch
+• Led technical design reviews and mentored junior developers
+• Technologies: Node.js, TypeScript, NestJS, AWS, Docker, Kubernetes, PostgreSQL, MongoDB, Redis
+'''
+
+[experience.vinci]
+role = "BIM Engineer & Developer"
+details = '''
+• Developed custom Revit plugins using C#, WPF, and Dynamo to automate BIM workflows
+• Created VBA Excel applications for construction planning and site management
+• Built automation tools that reduced manual modeling time by 40%
+• Coordinated BIM workflows between Architecture, Structural, and Methods departments
+• Managed structural BIM models for cost estimation and project tracking
+• Established internal BIM standards and best practices
+• Technologies: C#, .NET, WPF, Dynamo, VBA, Revit API
+'''
+
+[experience.resirep]
+role = "Construction Engineering Intern"
+details = '''
+• Assisted in supervising special foundation construction projects
+• Worked on major projects: Darse Nord and Tour Giroflées in Monaco
+• Coordinated with engineering teams on technical specifications
+'''
+
+# Education Translations
+[education.estp]
+degree = "Engineer Degree – Master in BIM (Building Information Modeling)"
+details = "Specialization in Public Works & BIM, C# Programming, Dynamo for Revit"
+
+[education.nuce]
+degree = "Civil Engineer Degree"
+details = "Specialization in Transport Infrastructure"
+
+# Nationality Translations
+[nationality]
+french = "French"
+vietnamese = "Vietnamese"
+
+# Languages Translations
+[language.french]
+name = "French"
+level = "Professional"
+
+[language.english]
+name = "English"
+
+[language.vietnamese]
+name = "Vietnamese"
+level = "Native"
+
+# Interests Translations
+[interest]
+rollerblade = "Rollerblade"
+pingpong = "Ping-Pong"
+skiing = "Skiing"
+reading = "Reading"
+film = "Film"
+
+# Projects Translations
+[project]
+title = "Open Source & Personal Projects"
+
+[project.gozzi]
+title = "Gozzi"
+tagline = "Fast SSG in Go • Builds in <100ms"
+
+[project.veggies]
+title = "Veggies"
+tagline = "BDD framework for Node.js • Cucumber/Gherkin"
+
+[project.node_config]
+title = "node-config"
+tagline = "Multi-env config library for Node.js"
+
+[project.node_logger]
+title = "node-logger"
+tagline = "Structured logging for Node.js"
+
+[project.imgc_rs]
+title = "imgc-rs"
+tagline = "Image converter CLI in Rust • PNG/JPG/WebP/AVIF"
+
+[project.prettyoutput]
+title = "prettyoutput"
+tagline = "Colorized console for Node.js • Zero dependencies"
+
+[project.personal_website]
+title = "tduyng.com"
+tagline = "Tech blog • Backend, DevOps, Software Engineering"
+
+# Technical Skills Translations
+[skill]
+title = "Technical Skills"
+
+[skill.backend]
+name = "Backend Development"
+details = "Node.js, Deno, Bun, TypeScript, NestJS, REST, GraphQL, gRPC"
+
+[skill.languages]
+name = "Programming Languages"
+details = "TypeScript/JavaScript, Go, Rust, C#, Python, Lua, Zig"
+
+[skill.databases]
+name = "Databases"
+details = "PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch"
+
+[skill.cloud_devops]
+name = "Cloud & DevOps"
+details = "AWS (EC2, Lambda, S3, RDS), Docker, Kubernetes, ArgoCD, CI/CD"
+
+[skill.caching]
+name = "Caching & Proxy"
+details = "Varnish, Nginx, Apache, Redis"
+
+[skill.monitoring]
+name = "Monitoring & Observability"
+details = "Datadog, Dynatrace, OpenTelemetry, Prometheus, Grafana"
+
+[skill.performance]
+name = "Performance Testing & Reporting"
+details = "K6, Newman (Postman), InfluxDB, Prometheus, Grafana"
+
+[skill.version_control]
+name = "Version Control"
+details = "Git, GitHub, GitLab, GitHub Actions"
+
+[skill.frontend]
+name = "Frontend Technologies"
+details = "React, Next.js, HTML5/CSS3, TailwindCSS"
+
+[skill.tools]
+name = "Tools & Methodologies"
+details = "Agile, TDD, Nix, Neovim, Clean Architecture, Design Patterns"
+
+[skill.automation]
+name = "Automation & Scripting"
+details = "Bash, Makefiles, Justfiles, Python/Node.js/Go scripting"

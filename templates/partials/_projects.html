@@ -1,13 +1,19 @@
-{{ if .Site.Config.extra.project }}
+{{ $t := .Site.Config.data.translations.en }}
+{{ if eq .Page.Config.extra.lang "fr" }}
+    {{ $t = .Site.Config.data.translations.fr }}
+{{ end }}
+{{ $projects := .Site.Config.data.projects.project }}
+
+{{ if $projects }}
 <section class="content-section">
     <h2 class="content-section-title">
         <i class="fas fa-code-branch"></i>
-        {{ .Page.Config.extra.trans.project.title }}
+        {{ $t.project.title }}
     </h2>
     
     <div class="projects-grid">
-        {{ range .Site.Config.extra.project }}
-            {{ $trans := index $.Page.Config.extra.trans.project .id }}
+        {{ range $projects }}
+            {{ $trans := index $t.project .id }}
         <div class="project-item">
             <h3 class="project-title">
                 <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ $trans.title }}</a>
