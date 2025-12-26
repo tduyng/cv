@@ -61,8 +61,8 @@
         })
 
         // Language switcher with scroll position preservation
-        const languageSwitcher = document.querySelector('.language-switcher')
-        if (languageSwitcher) {
+        const languageSwitchers = document.querySelectorAll('.language-switcher, .lang-switcher')
+        if (languageSwitchers.length > 0) {
             // Restore scroll position after language switch
             const savedScrollPos = sessionStorage.getItem('cv-scroll-pos')
             if (savedScrollPos) {
@@ -74,16 +74,18 @@
             }
 
             // Save scroll position before language switch
-            languageSwitcher.addEventListener('click', function (e) {
-                if (e.target.tagName === 'A') {
-                    if (e.target.classList.contains('active')) {
-                        // Prevent reload on active language
-                        e.preventDefault()
-                    } else {
-                        // Save current scroll position before navigating
-                        sessionStorage.setItem('cv-scroll-pos', window.scrollY.toString())
+            languageSwitchers.forEach(switcher => {
+                switcher.addEventListener('click', function (e) {
+                    if (e.target.tagName === 'A' && e.target.classList.contains('lang-link')) {
+                        if (e.target.classList.contains('active')) {
+                            // Prevent reload on active language
+                            e.preventDefault()
+                        } else {
+                            // Save current scroll position before navigating
+                            sessionStorage.setItem('cv-scroll-pos', window.scrollY.toString())
+                        }
                     }
-                }
+                })
             })
         }
     })
