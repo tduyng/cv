@@ -8,6 +8,13 @@
              class="avatar">
         <h1 class="name">{{ $profile.name }}</h1>
         <p class="tagline">{{ i18n "tagline" .Page.Config }}</p>
+        
+        <!-- Online CV Note - Visible in print too -->
+        <div class="online-cv-note">
+            <i class="fas fa-globe"></i>
+            <span>{{ if eq .Page.Config.lang "fr" }}Version en ligne{{ else }}View online{{ end }}:</span>
+            <a href="https://cv.tduyng.com" target="_blank">cv.tduyng.com</a>
+        </div>
     </div>
 
     <!-- Contact Section -->

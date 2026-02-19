@@ -5,7 +5,7 @@ tagline = "Ingénieur Backend Senior | Node.js, TypeScript, AWS"
 [career]
 title = "Profil Professionnel"
 summary = '''
-Ingénieur Backend Senior chez Ekino France, spécialisé en Node.js, TypeScript et AWS pour des applications scalables et performantes. Avec une solide expertise en architecture logicielle et infrastructure cloud, je conçois des systèmes backend robustes capables de gérer des charges importantes de manière fiable. Avant de me spécialiser dans le développement backend, j'ai travaillé comme Ingénieur BIM chez VINCI Construction France, où j'ai développé des outils d'automatisation et des plugins en C#, démontrant ma polyvalence sur différentes stacks technologiques.
+Ingénieur Backend Senior chez Ekino France avec plus de 7 ans d'expérience. Spécialisé en delivery production, monitoring et debugging pour des systèmes haute performance et scalables avec Node.js, TypeScript et AWS. Expérience en architecture backend, APIs RESTful/GraphQL gérant des millions de requêtes, et infrastructure cloud. Expérience en leadership d'équipe avec onboarding, mentorat et présentations techniques. Auparavant Ingénieur BIM chez VINCI Construction France où j'ai développé des outils d'automatisation en C#.
 '''
 
 # Titres des sections
@@ -22,34 +22,31 @@ experiences = "Expériences Professionnelles"
 [experience.ekino]
 role = "Ingénieur Backend Senior"
 details = '''
-• Travail sur les projets CANAL+, développement de systèmes backend haute performance avec Node.js, TypeScript et NestJS
-• Conception et architecture d'APIs RESTful et GraphQL gérant des millions de requêtes quotidiennes
-• Gestion d'infrastructure cloud sur AWS (EC2, Lambda, S3, RDS, ElastiCache)
-• Mise en place de pipelines CI/CD avec GitLab et GitHub Actions pour les déploiements automatisés
-• Orchestration d'applications conteneurisées avec Docker et Kubernetes
-• Optimisation des performances des bases de données (PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch)
-• Animation de revues techniques et mentorat des développeurs juniors
-• Technologies: Node.js, TypeScript, NestJS, AWS, Docker, Kubernetes, PostgreSQL, MongoDB, Redis
+• Delivery & production: mise en production, monitoring, debugging et résolution d'incidents sur CANAL+
+• Développement backend haute performance: Node.js, TypeScript, NestJS, APIs RESTful/GraphQL (millions requêtes/jour)
+• Architecture & conception: design de nouvelles fonctionnalités, architecture des systèmes
+• Data: PostgreSQL, MongoDB, Redis, Elasticsearch, ElastiCache
+• Infra: AWS (Elastic Beanstalk, EKS, Lambda, S3, RDS), Docker, Kubernetes, CI/CD (GitLab/GitHub Actions)
+• Optimisation: performances applicatives et architecturales
+• Équipe: onboarding nouveaux membres, mentorat, montées en compétences, revues techniques, présentations internes
 '''
 
 [experience.vinci]
 role = "Ingénieur BIM & Développeur"
 details = '''
-• Développement de plugins Revit personnalisés en C#, WPF et Dynamo pour automatiser les workflows BIM
-• Création d'applications VBA Excel pour la planification et la gestion de chantier
-• Développement d'outils d'automatisation réduisant le temps de modélisation manuelle de 40%
-• Coordination des workflows BIM entre les départements Architecture, Structure et Méthodes
-• Gestion des modèles BIM structurels pour l'estimation des coûts et le suivi de projet
-• Établissement des standards et bonnes pratiques BIM internes
-• Technologies: C#, .NET, WPF, Dynamo, VBA, API Revit
+• Développement: plugins Revit (C#, WPF, Dynamo), applications VBA Excel
+• Automatisation: outils pour simplifier les workflows et la modélisation BIM
+• Coordination: workflows entre Architecture, Structure et Méthodes
+• Gestion: modèles BIM pour l'étude des prix et suivi de projet
+• Standards: établissement des bonnes pratiques BIM internes
 '''
 
 [experience.resirep]
 role = "Stagiaire Ingénieur Travaux"
 details = '''
-• Assistance à la supervision de projets de fondations spéciales
-• Participation aux projets majeurs: Darse Nord et Tour Giroflées à Monaco
-• Coordination avec les équipes d'ingénierie sur les spécifications techniques
+• Supervision: projets de fondations spéciales
+• Projets majeurs: Darse Nord et Tour Giroflées à Monaco
+• Coordination: avec les équipes d'ingénierie sur les spécifications techniques
 '''
 
 # Traductions de la formation
@@ -73,6 +70,7 @@ level = "Courant"
 
 [language.english]
 name = "Anglais"
+level = "Professionnel"
 
 [language.vietnamese]
 name = "Vietnamien"
@@ -90,33 +88,45 @@ film = "Film"
 [project]
 title = "Projets Open Source & Personnels"
 
+[project.personal_website]
+title = "tduyng.com"
+tagline = "Blog technique • HTML/CSS"
+
 [project.gozzi]
 title = "Gozzi"
-tagline = "SSG rapide en Go • Builds en <100ms"
+tagline = "Générateur de site statique (<100ms) • Go"
 
 [project.veggies]
 title = "Veggies"
-tagline = "Framework BDD Node.js • Cucumber/Gherkin"
+tagline = "Framework de tests BDD • TypeScript"
 
 [project.node_config]
 title = "node-config"
-tagline = "Lib configuration Node.js multi-env"
+tagline = "Configuration multi-environnement • TypeScript"
 
 [project.node_logger]
 title = "node-logger"
-tagline = "Logging structuré pour Node.js"
+tagline = "Logging structuré JSON • TypeScript"
 
 [project.imgc_rs]
 title = "imgc-rs"
-tagline = "Convertisseur d'images CLI en Rust • PNG/JPG/WebP/AVIF"
+tagline = "Convertisseur d'images CLI (PNG/JPG/WebP/AVIF) • Rust"
 
 [project.prettyoutput]
 title = "prettyoutput"
-tagline = "Console colorée Node.js • Zero dépendances"
+tagline = "Affichage formaté console • TypeScript"
 
-[project.personal_website]
-title = "tduyng.com"
-tagline = "Blog technique • Backend, DevOps, Software Engineering"
+[project.codeme]
+title = "codeme"
+tagline = "Backend tracker d'activité coding privé • Go"
+
+[project.codeme_nvim]
+title = "codeme.nvim"
+tagline = "Alternative WakaTime privacy-first • Lua"
+
+[project.vdiff_nvim]
+title = "vdiff.nvim"
+tagline = "Git diff style IntelliJ • Lua"
 
 # Traductions des compétences techniques
 [skill]
@@ -128,7 +138,7 @@ details = "Node.js, Deno, Bun, TypeScript, NestJS, REST, GraphQL, gRPC"
 
 [skill.languages]
 name = "Langages de Programmation"
-details = "TypeScript/JavaScript, Go, Rust, C#, Python, Lua, Zig"
+details = "TypeScript/JavaScript, Go, Rust, Zig, Python, Lua, C#"
 
 [skill.databases]
 name = "Bases de Données"
@@ -136,23 +146,19 @@ details = "PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch"
 
 [skill.cloud_devops]
 name = "Cloud & DevOps"
-details = "AWS (EC2, Lambda, S3, RDS), Docker, Kubernetes, ArgoCD, CI/CD"
+details = "AWS, Docker, Kubernetes, ArgoCD, CI/CD"
 
 [skill.caching]
 name = "Caching & Proxy"
 details = "Varnish, Nginx, Apache, Redis"
 
 [skill.monitoring]
-name = "Monitoring & Observabilité"
-details = "Datadog, Dynatrace, OpenTelemetry, Prometheus, Grafana"
-
-[skill.performance]
-name = "Tests de Performance & Reporting"
-details = "K6, Newman (Postman), InfluxDB, Prometheus, Grafana"
+name = "Monitoring, Observabilité & Performance"
+details = "Datadog, OpenTelemetry, Prometheus, Grafana, K6, InfluxDB"
 
 [skill.version_control]
 name = "Contrôle de Version"
-details = "Git, GitHub, GitLab, GitHub Actions"
+details = "Git, GitHub, GitLab"
 
 [skill.frontend]
 name = "Technologies Frontend"
@@ -165,3 +171,6 @@ details = "Agile, TDD, Nix, Neovim, Clean Architecture, Design Patterns, Termina
 [skill.automation]
 name = "Automatisation & Scripting"
 details = "Bash, Makefiles, Justfiles, Scripting Python/Node.js/Go"
+
+# Footer
+online_cv = "Version en ligne: cv.tduyng.com"

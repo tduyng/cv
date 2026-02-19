@@ -5,7 +5,7 @@ tagline = "Senior Backend Engineer | Node.js, TypeScript, AWS"
 [career]
 title = "Career Profile"
 summary = '''
-Senior Backend Engineer at Ekino France, specializing in Node.js, TypeScript, and AWS for scalable, high-performance applications. With a strong foundation in software architecture and cloud infrastructure, I build robust backend systems that handle heavy workloads reliably. Before transitioning to backend development, I worked as a BIM Engineer at VINCI Construction France, where I developed automation tools and plugins using C#, demonstrating my versatility across different technology stacks.
+Senior Backend Engineer at Ekino France with 7+ years of experience. Specialized in production delivery, monitoring, and debugging for scalable high-performance systems using Node.js, TypeScript, and AWS. Experience in backend architecture, RESTful/GraphQL APIs handling millions of requests, and cloud infrastructure. Experienced in team leadership including onboarding, mentoring, and technical presentations. Previously BIM Engineer at VINCI Construction France where I developed automation tools in C#.
 '''
 
 # Section Titles
@@ -22,34 +22,31 @@ experiences = "Experiences"
 [experience.ekino]
 role = "Senior Backend Engineer"
 details = '''
-• Working on CANAL+ projects, developing high-performance backend systems using Node.js, TypeScript, and NestJS
-• Architected and designed RESTful and GraphQL APIs handling millions of requests daily
-• Managed cloud infrastructure on AWS (EC2, Lambda, S3, RDS, ElastiCache)
-• Implemented CI/CD pipelines with GitLab and GitHub Actions for automated deployments
-• Orchestrated containerized applications with Docker and Kubernetes
-• Optimized database performance across PostgreSQL, MySQL, MongoDB, Redis, and Elasticsearch
-• Led technical design reviews and mentored junior developers
-• Technologies: Node.js, TypeScript, NestJS, AWS, Docker, Kubernetes, PostgreSQL, MongoDB, Redis
+• Delivery & production: deployment, monitoring, debugging and incident resolution on CANAL+
+• High-performance backend: Node.js, TypeScript, NestJS, RESTful/GraphQL APIs (millions requests/day)
+• Architecture & design: system architecture, new features design
+• Data: PostgreSQL, MongoDB, Redis, Elasticsearch, ElastiCache
+• Infra: AWS (Elastic Beanstalk, EKS, Lambda, S3, RDS), Docker, Kubernetes, CI/CD (GitLab/GitHub Actions)
+• Optimization: application and architecture performance
+• Team: onboarding, mentoring, skills development, technical reviews, internal presentations
 '''
 
 [experience.vinci]
 role = "BIM Engineer & Developer"
 details = '''
-• Developed custom Revit plugins using C#, WPF, and Dynamo to automate BIM workflows
-• Created VBA Excel applications for construction planning and site management
-• Built automation tools that reduced manual modeling time by 40%
-• Coordinated BIM workflows between Architecture, Structural, and Methods departments
-• Managed structural BIM models for cost estimation and project tracking
-• Established internal BIM standards and best practices
-• Technologies: C#, .NET, WPF, Dynamo, VBA, Revit API
+• Development: custom Revit plugins (C#, WPF, Dynamo), VBA Excel applications
+• Automation: tools to simplify BIM workflows and modeling
+• Coordination: BIM workflows between Architecture, Structural and Methods
+• Management: BIM models for cost estimation and project tracking
+• Standards: established internal BIM best practices
 '''
 
 [experience.resirep]
 role = "Construction Engineering Intern"
 details = '''
-• Assisted in supervising special foundation construction projects
-• Worked on major projects: Darse Nord and Tour Giroflées in Monaco
-• Coordinated with engineering teams on technical specifications
+• Supervision: special foundation construction projects
+• Major projects: Darse Nord and Tour Giroflées in Monaco
+• Coordination: with engineering teams on technical specifications
 '''
 
 # Education Translations
@@ -73,6 +70,7 @@ level = "Professional"
 
 [language.english]
 name = "English"
+level = "Professional"
 
 [language.vietnamese]
 name = "Vietnamese"
@@ -90,33 +88,45 @@ film = "Film"
 [project]
 title = "Open Source & Personal Projects"
 
+[project.personal_website]
+title = "tduyng.com"
+tagline = "Tech blog • HTML/CSS"
+
 [project.gozzi]
 title = "Gozzi"
-tagline = "Fast SSG in Go • Builds in <100ms"
+tagline = "Static site generator with <100ms builds • Go"
 
 [project.veggies]
 title = "Veggies"
-tagline = "BDD framework for Node.js • Cucumber/Gherkin"
+tagline = "BDD testing framework • TypeScript"
 
 [project.node_config]
 title = "node-config"
-tagline = "Multi-env config library for Node.js"
+tagline = "Multi-environment configuration • TypeScript"
 
 [project.node_logger]
 title = "node-logger"
-tagline = "Structured logging for Node.js"
+tagline = "Structured JSON logging • TypeScript"
 
 [project.imgc_rs]
 title = "imgc-rs"
-tagline = "Image converter CLI in Rust • PNG/JPG/WebP/AVIF"
+tagline = "Image converter CLI (PNG/JPG/WebP/AVIF) • Rust"
 
 [project.prettyoutput]
 title = "prettyoutput"
-tagline = "Colorized console for Node.js • Zero dependencies"
+tagline = "Pretty print output for console • TypeScript"
 
-[project.personal_website]
-title = "tduyng.com"
-tagline = "Tech blog • Backend, DevOps, Software Engineering"
+[project.codeme]
+title = "codeme"
+tagline = "Private coding activity tracker backend • Go"
+
+[project.codeme_nvim]
+title = "codeme.nvim"
+tagline = "Privacy-first WakaTime alternative • Lua"
+
+[project.vdiff_nvim]
+title = "vdiff.nvim"
+tagline = "IntelliJ-inspired Git diff • Lua"
 
 # Technical Skills Translations
 [skill]
@@ -128,7 +138,7 @@ details = "Node.js, Deno, Bun, TypeScript, NestJS, REST, GraphQL, gRPC"
 
 [skill.languages]
 name = "Programming Languages"
-details = "TypeScript/JavaScript, Go, Rust, C#, Python, Lua, Zig"
+details = "TypeScript/JavaScript, Go, Rust, Zig, Python, Lua, C#"
 
 [skill.databases]
 name = "Databases"
@@ -136,23 +146,19 @@ details = "PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch"
 
 [skill.cloud_devops]
 name = "Cloud & DevOps"
-details = "AWS (EC2, Lambda, S3, RDS), Docker, Kubernetes, ArgoCD, CI/CD"
+details = "AWS, Docker, Kubernetes, ArgoCD, CI/CD"
 
 [skill.caching]
 name = "Caching & Proxy"
 details = "Varnish, Nginx, Apache, Redis"
 
 [skill.monitoring]
-name = "Monitoring & Observability"
-details = "Datadog, Dynatrace, OpenTelemetry, Prometheus, Grafana"
-
-[skill.performance]
-name = "Performance Testing & Reporting"
-details = "K6, Newman (Postman), InfluxDB, Prometheus, Grafana"
+name = "Monitoring, Observability & Performance"
+details = "Datadog, OpenTelemetry, Prometheus, Grafana, K6, InfluxDB"
 
 [skill.version_control]
 name = "Version Control"
-details = "Git, GitHub, GitLab, GitHub Actions"
+details = "Git, GitHub, GitLab"
 
 [skill.frontend]
 name = "Frontend Technologies"
@@ -165,3 +171,6 @@ details = "Agile, TDD, Nix, Neovim, Clean Architecture, Design Patterns"
 [skill.automation]
 name = "Automation & Scripting"
 details = "Bash, Makefiles, Justfiles, Python/Node.js/Go scripting"
+
+# Footer
+online_cv = "View online: cv.tduyng.com"

@@ -17,9 +17,6 @@ id = "caching"
 id = "monitoring"
 
 [[skill]]
-id = "performance"
-
-[[skill]]
 id = "version_control"
 
 [[skill]]
