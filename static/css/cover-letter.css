@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kalam', cursive;
+  line-height: 1.8;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.cover-letter {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  background: white;
+  padding: 3rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.header {
+  text-align: right;
+  margin-bottom: 3rem;
+  color: #34495e;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.8;
+  color: #3498db;
+}
+
+.content {
+  margin-bottom: 3rem;
+}
+
+.greeting {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.letter-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.content p:last-of-type,
+.letter-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.signature {
+  text-align: right;
+  margin-top: 2.5rem;
+}
+
+.closing {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.links {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.links a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 400;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+.navigation {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.back-to-cv {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.back-to-cv:hover {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+}
+
+/* Print styles */
+@media print {
+  body {
+    padding: 0;
+    background: white;
+  }
+  
+  .cover-letter {
+    box-shadow: none;
+    padding: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .navigation {
+    display: none;
+  }
+  
+  .links a {
+    color: #2c3e50;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .cover-letter {
+    padding: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .header .subtitle {
+    font-size: 1rem;
+  }
+  
+  .content p {
+    font-size: 1rem;
+  }
+  
+  .greeting {
+    font-size: 1.1rem;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+  }
+}
