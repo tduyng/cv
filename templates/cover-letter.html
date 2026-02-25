@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ .Page.Config.extra.lang }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>{{ .Page.Config.title }}</title>
+        <meta name="description" content="Cover letter for backend engineering positions" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ .Site.Config.extra.base_path }}/favicon.png" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="{{ .Site.Config.extra.base_path }}/css/cover-letter.css" />
+
+        <!-- Umami Analytics -->
+        <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="0b914cf1-9565-4a5c-a2f3-fe302b6b3b78"
+        ></script>
+
+        <!-- SEO & Social -->
+        <meta property="og:title" content="{{ .Page.Config.title }}" />
+        <meta property="og:description" content="Cover letter for backend engineering positions" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="{{ .Site.Config.base_url }}" />
+    </head>
+
+    <body>
+        <div class="cover-letter">
+            <div class="header">
+                <h1>{{ .Page.Config.extra.name }}</h1>
+                <p class="subtitle">{{ .Page.Config.extra.subtitle }}</p>
+            </div>
+
+            <div class="content">
+                <div class="greeting">{{ .Page.Config.extra.greeting }}</div>
+
+                <div class="letter-content">{{ .Page.Content }}</div>
+            </div>
+
+            <div class="signature">
+                <p class="closing">{{ .Page.Config.extra.closing }}</p>
+                <p class="name">{{ .Page.Config.extra.name }}</p>
+                <div class="links">
+                    <a href="https://github.com/tduyng">github.com/tduyng</a>
+                    <a href="https://tduyng.com">tduyng.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a
+                href="{{ .Site.Config.extra.base_path }}/{{ .Page.Config.extra.lang }}/"
+                class="back-to-cv"
+            >
+                {{ .Page.Config.extra.back_to_cv }}
+            </a>
+        </div>
+    </body>
+</html>
+
